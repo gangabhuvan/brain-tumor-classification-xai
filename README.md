@@ -26,17 +26,34 @@ Accurate and early diagnosis of brain tumors is crucial for effective clinical i
 
 ## 📊 EXPERIMENTAL RESULTS (N = 1,311)
 
-| Exp | Model Configuration| Optimizer| Accuracy (%) | MCC     | mAP     | Errors |
-|-----|--------------------|----------|--------------|---------|---------|--------|
-| 01  | ConvNeXt (Single)  | Aquila   | *99.69*      | *0.9959*| *1.0000*|   *4*  |
-| 02  | ConvNeXt (Single)  | Baseline | 99.69        | 0.9959  |  0.9999 |    4   |
-| 03  | Swin Transformer   | RS       | 99.62        | 0.9949  |  0.9999 |    5   |
-| 04  | Swin Transformer   | Aquila   | 99.62        | 0.9949  |  0.9995 |    5   |
-| 05  | ConvNeXt (K-Fold)  | Aquila   | 99.47        | 0.9928  |  0.9998 |    7   |
-| 06  | EfficientNet-B0    | Aquila   | 99.47        | 0.9929  |  0.9999 |    7   |
-| 07  | ConvNeXt (K-Fold)  | Baseline | 99.24        | 0.9898  |  0.9997 |    10  |
+| Exp | Model Configuration| Optimizer| Accuracy (%) | MCC     | mAP      | Errors |
+|-----|--------------------|----------|--------------|---------|----------|--------|
+| 01  | ConvNeXt (Single)  | Aquila   | 99.69        | 0.9959  |**1.0000**|    4   |
+| 02  | ConvNeXt (Single)  | Baseline | 99.69        | 0.9959  |  0.9999  |    4   |
+| 03  | Swin Transformer   | RS       | 99.62        | 0.9949  |  0.9999  |    5   |
+| 04  | Swin Transformer   | Aquila   | 99.62        | 0.9949  |  0.9995  |    5   |
+| 05  | ConvNeXt (K-Fold)  | Aquila   | 99.47        | 0.9928  |  0.9998  |    7   |
+| 06  | EfficientNet-B0    | Aquila   | 99.47        | 0.9929  |  0.9999  |    7   |
+| 07  | ConvNeXt (K-Fold)  | Baseline | 99.24        | 0.9898  |  0.9997  |    10  |
 
 ---
+
+### 🔍 Key Observations
+
+- **ConvNeXt + AQ (Single & K-Fold)** and **Swin Transformer (RS & AQ)** achieved **100% recall for the Meningioma tumor class**, indicating that these models consistently detect all meningioma cases without false negatives.
+
+- **EfficientNet-B0 + AQ** achieved **100% recall for the No Tumor class**, demonstrating strong reliability in correctly identifying healthy cases.
+
+- These results highlight that while overall accuracy is similar across models, **class-wise performance varies**, emphasizing the importance of per-class evaluation in medical diagnosis tasks.
+
+- Achieving 100% recall in specific classes is particularly significant in clinical settings, as it ensures **no critical cases are missed**.
+
+- **Model Behavior Insight:** ConvNeXt + AQ demonstrates stronger performance in **tumor detection**, while EfficientNet-B0 shows higher reliability in **normal (no tumor) classification**, indicating a degree of **model specialization across classes**.
+
+---
+
+💡 **Why Recall Matters (Clinical Perspective)**  
+In medical diagnosis, recall is critical because missing a tumor (false negative) is more dangerous than a false positive. Achieving 100% recall ensures that no actual tumor cases are overlooked, making the model safer for clinical decision support.
 
 ## 🧠 EXPLAINABLE AI (XAI)
 
