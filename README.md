@@ -65,7 +65,7 @@ Flask-based diagnostic dashboard:
 
 ## 📂 COMPLETE PROJECT STRUCTURE
 
-
+```
 brain-tumor-classification-xai/
 │
 ├── model/                          # Final trained model
@@ -88,7 +88,7 @@ brain-tumor-classification-xai/
 │   ├── confusion_matrix_test.png
 │   ├── favicon.ico
 │   ├── nmit_logo.jpeg
-│   └── outputs/                   # Generated XAI images
+│   └── outputs/
 │
 ├── templates/                      # HTML templates
 │   ├── base.html
@@ -99,15 +99,16 @@ brain-tumor-classification-xai/
 ├── uploads/                        # Uploaded MRI images
 │
 ├── utils/                          # Core logic
-│   └── explainer1.py              # Grad-CAM++, LIME, SHAP
+│   └── explainer1.py
 │
 ├── app1.py                         # Flask backend
 ├── evaluate_dataset.py            # Evaluation script
 ├── generate_train_features.py     # Feature extraction
 │
-├── requirements.txt               # Dependencies
-├── runtime.txt                    # Python version
-└── users.db                       # SQLite authentication
+├── requirements.txt
+├── runtime.txt
+└── users.db
+```
 
 
 ---
