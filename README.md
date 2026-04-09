@@ -150,20 +150,21 @@ Experiments → Model Selection → Flask App → Upload → Prediction → XAI 
 
 ---
 
-## ⚙️ INSTALLATION
+## ⚙️ INSTALLATION & LOCAL EXECUTION
 
-bash
+```bash
 git clone https://github.com/gangabhuvan/brain-tumor-classification-xai.git
 cd brain-tumor-classification-xai
+
 pip install -r requirements.txt
+
 python app1.py
+```
 
-
-Open:
-
-
+Open in browser:
+```
 http://127.0.0.1:5000
-
+```
 
 ---
 
