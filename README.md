@@ -1,5 +1,7 @@
 # 🧠 Deep Learning Models for Brain Tumor Classification with Explainable AI
 
+*A research-driven deep learning framework for brain tumor classification with metaheuristic optimization and clinically interpretable AI.*
+
 *Author:* Bhuvankumar A Patri  
 *Architecture:* ConvNeXt, Swin Transformer, EfficientNet-B0  
 *Optimization:* Aquila Optimizer (AQ), Random Search (RS), Baseline  
