@@ -1,0 +1,465 @@
+{% extends "base.html" %}
+
+{% block nav_left %}
+  <button type="button" class="nav-btn" onclick="toggleReport('train')">📊 Train Report</button>
+  <button type="button" class="nav-btn" onclick="toggleReport('test')">🧩 Test Report</button>
+  <button type="button" class="nav-btn" onclick="showInfo()">ℹ️ Status</button>
+{% endblock %}
+
+{% block head %}
+<style>
+:root{
+  --primary:#1e90ff; --success:#28a745; --warning:#ff9800; --danger:#f44336;
+  --glass:rgba(245,250,255,0.97); --bg:#f4f7fb;
+}
+html,body{height:100%;margin:0;font-family:'Segoe UI',Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#eef4fb);color:#0f1724;}
+.container-main{max-width:1200px;margin:20px auto 40px auto;padding:0 20px;}
+.card{background:white;border-radius:12px;padding:20px;box-shadow:0 8px 24px rgba(20,30,60,0.05);margin-top:18px;}
+.btn{background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;border:none;cursor:pointer;font-weight:700;transition:all .2s;}
+.btn:hover{opacity:.9;}
+.btn.ghost{background:#fff;border:1px solid rgba(30,144,255,0.2);color:var(--primary);}
+
+/* upload */
+.upload-card{display:flex;flex-direction:column;align-items:center;gap:16px;padding:22px;}
+.file-area{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
+.file-label{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:2px dashed rgba(30,144,255,0.3);border-radius:10px;background:rgba(30,144,255,0.04);color:#1e90ff;font-weight:600;cursor:pointer;}
+.file-name{color:#555;font-weight:500;}
+
+/* spinner */
+#spinner-overlay{display:none;position:fixed;inset:0;background:rgba(255,255,255,0.85);backdrop-filter:blur(4px);z-index:9999;justify-content:center;align-items:center;flex-direction:column;color:#1e90ff;font-size:1.2rem;font-weight:600;}
+.loader{border:5px solid #f3f3f3;border-top:5px solid var(--primary);border-radius:50%;width:45px;height:45px;animation:spin 1s linear infinite;margin-bottom:12px;}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* results visuals */
+.result-img{width:700px;max-width:95%;height:auto;border-radius:10px;box-shadow:0 8px 30px rgba(20,30,60,0.08);cursor:pointer;transition:transform .2s;}
+.result-img:hover{transform:scale(1.02);}
+.orig-box,.viz-card,.full-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.viz-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px;justify-items:center;margin-top:20px;}
+.full-card{display:flex;align-items:center;justify-content:center;flex-direction:column;margin-top:20px;}
+.pred-row{display:flex;flex-direction:column;align-items:center;justify-content:center;width:700px;max-width:95%;gap:10px;background:#f9fbff;border-radius:12px;padding:14px;box-shadow:0 2px 12px rgba(0,0,0,0.04);}
+.conf-wrap{width:100%;}
+.conf-bar{width:100%;height:18px;background:#eef2f7;border-radius:10px;overflow:hidden;border:1px solid rgba(0,0,0,0.04);}
+.conf-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--success),var(--warning));transition:width 700ms ease;}
+.conf-meta{display:flex;justify-content:space-between;margin-top:6px;font-size:0.95rem;color:#6b7280;}
+
+/* slide panels */
+.floating-panel{position:fixed;top:60px;width:380px;background:var(--glass);border-radius:12px;box-shadow:4px 6px 30px rgba(10,20,40,0.12);font-size:13px;line-height:1.45;z-index:9999;transition:all .35s cubic-bezier(.2,.9,.2,1);max-height:90vh;overflow:auto;backdrop-filter:blur(6px);}
+.floating-header{display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid rgba(0,0,0,0.04);font-weight:800;color:var(--primary);}
+
+/* info panel + modal */
+#info-panel{position:fixed;top:20px;right:-420px;width:360px;background:var(--glass);border-left:6px solid var(--primary);border-radius:12px;padding:16px 18px;box-shadow:6px 10px 30px rgba(10,20,40,0.12);font-size:14px;line-height:1.45;z-index:9999;transition:all .45s cubic-bezier(.2,.9,.2,1);}
+#imgModal{display:none;position:fixed;z-index:20000;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.85);}
+#modalImg{display:block;margin:60px auto;max-width:92%;max-height:86%;border-radius:8px;}
+
+/* live message – tuned for placement inside .pred-row */
+#live-card{
+  margin-top:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  background:linear-gradient(90deg,#f9fbff,#eef5ff);
+  border-left:6px solid #e5e7eb;
+  border-radius:14px;
+  padding:20px 24px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  font-size:1.05rem;
+  transition:all .3s;
+}
+#live-dot{width:18px;height:18px;border-radius:50%;background:#9aa0a6;}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-main">
+  <!-- Upload -->
+  <div class="card upload-card">
+    <form id="upload-form" method="post" enctype="multipart/form-data"
+          style="display:flex;flex-direction:column;align-items:center;gap:16px;width:100%;max-width:650px;margin:auto;">
+      <div class="file-area">
+        <label for="file-upload" class="file-label">📁 Choose File</label>
+        <input id="file-upload" type="file" name="file" accept="image/*" required style="display:none;">
+        <span id="file-name" class="file-name">No file chosen</span>
+        <button class="btn" type="submit">Upload & Analyze</button>
+      </div>
+      <div style="color:#6b7280;font-size:0.9rem;">Recommended: high-resolution clinical MRI (PNG/JPEG). Max size: 10MB.</div>
+    </form>
+  </div>
+
+  {% if results %}
+  <!-- Prediction + Original -->
+  <div class="card" id="result-area">
+    <div class="orig-box">
+      <img id="orig-img" src="data:image/png;base64,{{ original | safe }}" 
+           class="result-img" alt="Original scan" onclick="openModal(this)">
+
+      <div class="pred-row">
+        <div class="pred-text">
+          Predicted: <span style="color:var(--primary)">{{ prediction }}</span> ({{ confidence }})
+        </div>
+        {% if second_prediction %}
+        <div class="subtext">
+          Second likely: {{ second_prediction }} ({{ second_confidence }})
+        </div>
+        {% endif %}
+
+        <!-- Confidence Bar -->
+        {% set conf_val = ((confidence or '0')|string|replace('%','')|float) %}
+        {% set conf_color = (
+            '#00c853' if conf_val >= 90 else
+            '#ffca28' if conf_val >= 70 else
+            '#e53935'
+        ) %}
+        
+        <div class="conf-wrap" style="margin-top:4px;">
+          <div class="conf-bar" 
+               style="width:100%;height:10px;border-radius:6px;overflow:hidden;background:#eee;position:relative;">
+            <div class="conf-fill" 
+                 style="width:{{ conf_val }}%;height:100%;background:{{ conf_color }};"></div>
+          </div>
+
+          <div class="conf-meta" style="display:flex;justify-content:space-between;margin-top:4px;">
+            <div>Confidence</div>
+            <div>Similarity: 
+              {% if similarity_score is not none %}
+                {{ (similarity_score*100)|round(2) }}%
+              {% else %}
+                —
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Message (inside original image layout, below confidence bar) -->
+        <div id="live-card" aria-live="polite">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div id="live-dot"></div>
+            <div>
+              <div style="font-weight:700;font-size:1rem;">Live Message</div>
+              <div id="live-message" style="color:#444;margin-top:3px;">{{ warning or 'Awaiting prediction...' }}</div>
+            </div>
+          </div>
+        </div>
+        <!-- /Live Message -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Explainability -->
+  <div id="explainability-card" class="card">
+    <div class="viz-grid">
+      <div class="viz-card">
+        <div style="font-weight:900; font-size:18px; color:#000; margin-bottom:10px;">Grad-CAM++ (Raw)</div>
+
+        <img src="data:image/png;base64,{{ gradcam | safe }}" class="result-img" alt="Grad-CAM Raw" onclick="openModal(this)">
+      </div>
+      <div class="viz-card">
+        <div style="font-weight:900; font-size:18px; color:#000; margin-bottom:10px;">Grad-CAM++ (Thresholded)</div>
+        <img src="data:image/png;base64,{{ thresholded | safe }}" class="result-img" alt="Grad-CAM Thresholded" onclick="openModal(this)">
+      </div>
+    </div>
+    <div class="full-card card">
+      <div style="font-weight:900; font-size:18px; color:#000; margin-bottom:10px;">LIME</div>
+      <img src="data:image/png;base64,{{ lime | safe }}" class="result-img" alt="LIME" onclick="openModal(this)">
+    </div>
+    <div class="full-card card">
+      <div style="font-weight:900; font-size:18px; color:#000; margin-bottom:10px;">SHAP</div>
+      <img src="data:image/png;base64,{{ shap | safe }}" class="result-img" alt="SHAP" onclick="openModal(this)">
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <form id="download-report-form" method="POST" action="{{ url_for('download_pdf') }}" style="display:flex;justify-content:center;margin-top:12px;">
+        <input type="hidden" name="original" value="{{ original or '' }}">
+        <input type="hidden" name="gradcam" value="{{ gradcam or '' }}">
+        <input type="hidden" name="thresholded" value="{{ thresholded or '' }}">
+        <input type="hidden" name="lime" value="{{ lime or '' }}">
+        <input type="hidden" name="shap" value="{{ shap or '' }}">
+        <input type="hidden" name="prediction" value="{{ (results or {}).get('prediction','') }}">
+        <input type="hidden" name="confidence" value="{{ (confidence or (results or {}).get('confidence') or '') }}">
+        <!-- confidence_pct: prefer results.metrics or results.confidence_pct; fallback to numeric parse of confidence string -->
+        <input type="hidden" name="confidence_pct"
+        value="{% if (results or {}).get('confidence_pct') is not none %}{{ (results or {}).get('confidence_pct') }}
+                {% elif confidence %}{{ (confidence|replace('%','')|float / 100.0) }}
+                {% else %}{{ '' }}{% endif %}">
+
+        <!-- Optional: CSV truth / similarity if present in results -->
+        <input type="hidden" name="true_class" value="{{ (results or {}).get('true_class','') }}">
+        <input type="hidden" name="similarity" value="{% if similarity_score is not none %}{{ similarity_score }}{% else %}{{ (results or {}).get('similarity','') }}{% endif %}">
+
+        <!-- Attach full metrics & radiologist_feedback as JSON strings (safe even when empty) -->
+        <input type="hidden" name="metrics" value='{{ (metrics or {}) | tojson }}'>
+        <input type="hidden" name="radiologist_feedback" value='{{ (radiologist_feedback or {}) | tojson }}'>
+
+        <!-- Also include the current live warning text so PDF can render it -->
+        <input type="hidden" name="warning" value="{{ warning or '' }}">
+        <button class="btn" type="submit" style="min-width:320px; display:inline-flex; justify-content:center; align-items:center;">
+          📄 Download Explainability Report (HD PDF)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  {% if radiologist_feedback %}
+  <div class="card" style="margin-top:24px;background:#f9fbff;border-left:6px solid var(--primary);box-shadow:0 4px 16px rgba(0,0,0,0.05)">
+    <div style="padding:18px 22px;">
+
+    <!-- HEADER -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+      <h4 style="color:var(--primary);margin:0;">🩺 Radiologist Feedback Summary</h4>
+      {% set tone = (radiologist_feedback.tone or 'normal') %}
+      <span style="padding:6px 12px;border-radius:10px;font-weight:700;
+                   {% if tone == 'normal' or tone == 'positive' %}background:#e8fff1;color:#2e7d32;
+                   {% elif tone == 'review' %}background:#eef3ff;color:#1e40af;
+                   {% elif tone == 'caution' %}background:#fff8e1;color:#b26a00;
+                   {% elif tone == 'critical' %}background:#ffebee;color:#b71c1c;
+                   {% else %}background:#eef3ff;color:#1e40af;{% endif %}">
+        {% if tone == 'positive' or tone == 'normal' %}🟢 Normal
+        {% elif tone == 'review' %}🟡 Review
+        {% elif tone == 'caution' %}🟠 Caution
+        {% elif tone == 'critical' %}🔴 Critical
+        {% else %}ℹ️ Info{% endif %}
+      </span>
+    </div>
+
+    <!-- SUMMARY -->
+    <div style="font-weight:600;margin-bottom:8px;">
+      {{ radiologist_feedback.summary }}
+    </div>
+
+    <!-- CLINICAL IMPRESSION -->
+    {% if radiologist_feedback.clinical_impression %}
+      <p style="margin:4px 0;font-style:italic;color:#2b6cb0;">
+          <b>Clinical Impression:</b> {{ radiologist_feedback.clinical_impression }}
+      </p>
+    {% endif %}
+
+    <!-- DETAILS -->
+    <div style="font-size:0.95rem;color:#333;margin-top:8px;line-height:1.45;">
+      <p style="margin:4px 0;"> <b>Confidence:</b> {{ radiologist_feedback.confidence_advice }}</p>
+      <p style="margin:4px 0;"> <b>Localization:</b> {{ radiologist_feedback.localization_advice }}</p>
+      <p style="margin:4px 0;"> <b>Consistency:</b> {{ radiologist_feedback.consistency_advice }}</p>
+      <p style="margin:4px 0;"> <b>Next Steps:</b> {{ radiologist_feedback.next_steps }}</p>
+    </div>
+
+    <!-- METRICS -->
+    {% if metrics %}
+    <hr style="border:none;border-top:1px solid rgba(0,0,0,0.06);margin:12px 0;">
+    <div style="font-size:0.9rem;color:#222;">
+      <b>Explainability Metrics:</b><br>
+      IoU: {{ "%.2f"|format(metrics.localization_acc) }} |
+      Dice: {{ "%.2f"|format(metrics.dice_similarity) }} |
+      Corr: {{ "%.2f"|format(metrics.map_correlation) }} |
+      Focus: {{ "%.2f"|format(metrics.focus_ratio) }} |
+      TEAS: {{ "%.2f"|format(metrics.TEAS) }} |
+      Robustness: {{ "%.2f"|format(metrics.robustness) }} |
+      Grade:
+      <span style="font-weight:bold;color:
+        {% if metrics.Explainability_Grade in ['A+','A'] %}var(--success)
+        {% elif metrics.Explainability_Grade in ['B','C'] %}var(--warning)
+        {% else %}var(--danger){% endif %};">
+        {{ metrics.Explainability_Grade }}
+      </span>
+
+      <!-- GRADE BAR -->
+      <div class="grade-bar" 
+           style="margin-top:8px;width:100%;height:10px;border-radius:6px;
+                  overflow:hidden;background:#eee;position:relative;">
+
+        {% set fill_color = (
+            '#00c853' if metrics.Explainability_Grade in ['A+', 'A']
+            else '#ffca28' if metrics.Explainability_Grade in ['B', 'C']
+            else '#e53935'
+        ) %}
+
+        {% set fill_percent = (
+            90 if metrics.Explainability_Grade == 'A+'
+            else 80 if metrics.Explainability_Grade == 'A'
+            else 65 if metrics.Explainability_Grade == 'B'
+            else 55 if metrics.Explainability_Grade == 'C'
+            else 40 if metrics.Explainability_Grade == 'D'
+            else 25
+        ) %}
+
+        <!-- Filled section: single-color up to grade level -->
+        <div style="width:{{ fill_percent }}%;height:100%;background:{{ fill_color }};"></div>
+
+        <!-- Thin black grade marker -->
+        <div style="position:absolute;top:0;bottom:0;left:{{ fill_percent }}%;
+                    width:3px;background:#000;border-radius:2px;"></div>
+      </div>
+      <!-- T-Score formula explanation -->
+      <div style="margin-top:8px;font-size:0.85rem;color:#555;text-align:left;">
+        <b>T-Score Calculation:</b><br>
+        T-Score = 0.4 × IoU (Localization) + 0.35 × TEAS + 0.25 × Robustness<br>
+        <span style="color:#1e40af;">
+          Computed T-Score: {{ "%.3f"|format(metrics.get('Explainability_TScore', 0.0)) }}
+        </span>
+      </div>
+      <div class="grade-tooltip" style="margin-top:8px;font-size:0.85rem;line-height:1.45;color:#444;">
+        <b>Grade Meaning:</b><br>
+        🟢 <b>A+</b> — score ≥ 0.75 (Exceptional explainability and focus alignment)<br>
+        🟢 <b>A</b> — 0.65 ≤ score < 0.75 (Very good interpretability; reliable localization)<br>
+        🟡 <b>B</b> — 0.55 ≤ score < 0.65 (Good/Acceptable interpretability)<br>
+        🟠 <b>C</b> — 0.50 ≤ score < 0.55 (Moderate interpretability; limited focus overlap)<br>
+        🔴 <b>D</b> — 0.35 ≤ score < 0.50 (Weak localization; manual review required)<br>
+        🔴 <b>E</b> — score < 0.35 (Poor alignment; not suitable for autonomous interpretation)
+      </div>
+
+
+      {% if tone == 'critical' and ('Misclassification' in radiologist_feedback.summary or 'External' in radiologist_feedback.summary) %}
+      <div style="margin-top:10px;font-size:0.85rem;color:#b71c1c;">
+        ⚖️ <b>Ground Truth Override:</b> Feedback tone automatically set to <b>Critical</b> due to dataset evidence
+        (misclassification or external sample). Manual confirmation advised.
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+{% endif %}
+{% endif %}
+<!-- (Live Message block removed from here — now inside .pred-row) -->
+
+</div>
+
+<!-- Spinner -->
+<div id="spinner-overlay"><div class="loader"></div><div>Processing... Please wait</div></div>
+
+<!-- Image Modal -->
+<div id="imgModal" role="dialog" aria-modal="true" aria-label="Image preview">
+  <span onclick="closeModal()" style="position:absolute;top:18px;right:28px;color:white;font-size:32px;cursor:pointer">&times;</span>
+  <img id="modalImg" src="" alt="">
+</div>
+
+<!-- Train Panel -->
+<div id="train-panel" class="floating-panel" style="left:-420px;border-right:6px solid var(--primary)">
+  <div class="floating-header">
+    <span>Train Report</span>
+    <button onclick="closeReport('train')" style="background:none;border:none;color:var(--primary);cursor:pointer">✖</button>
+  </div>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;margin:8px 12px">
+    <thead>
+      <tr style="background:#e7f1ff"><th>Class</th><th>Precision</th><th>Recall</th><th>F1-Score</th><th>Support</th></tr>
+    </thead>
+    <tbody>
+      {% for row in train_class_rows %}
+      <tr><td>{{ row.class }}</td><td>{{ row.precision|round(4) }}</td><td>{{ row.recall|round(4) }}</td><td>{{ row['f1-score']|round(4) }}</td><td>{{ row.support|int }}</td></tr>
+      {% endfor %}
+      {% for row in train_avg_rows %}
+      <tr style="background:#f3f9ff"><td>{{ row.class }}</td><td>{{ row.precision|round(4) }}</td><td>{{ row.recall|round(4) }}</td><td>{{ row['f1-score']|round(4) }}</td><td>{{ row.support|int }}</td></tr>
+      {% endfor %}
+      <tr style="background:#e8ffee;font-weight:bold"><td colspan="4" style="text-align:right">Accuracy</td><td>{{ (train_accuracy_row|default(0.0))|round(4) }}</td></tr>
+    </tbody>
+  </table>
+  <div style="padding:8px 12px"><img src="{{ train_cm_path }}" alt="Train confusion matrix" style="width:100%;border-radius:6px"/></div>
+</div>
+
+<!-- Test Panel -->
+<div id="test-panel" class="floating-panel" style="left:-420px;border-right:6px solid var(--primary)">
+  <div class="floating-header">
+    <span>Test Report</span>
+    <button onclick="closeReport('test')" style="background:none;border:none;color:var(--primary);cursor:pointer">✖</button>
+  </div>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;margin:8px 12px">
+    <thead>
+      <tr style="background:#e7f1ff"><th>Class</th><th>Precision</th><th>Recall</th><th>F1-Score</th><th>Support</th></tr>
+    </thead>
+    <tbody>
+      {% for row in test_class_rows %}
+      <tr><td>{{ row.class }}</td><td>{{ row.precision|round(4) }}</td><td>{{ row.recall|round(4) }}</td><td>{{ row['f1-score']|round(4) }}</td><td>{{ row.support|int }}</td></tr>
+      {% endfor %}
+      {% for row in test_avg_rows %}
+      <tr style="background:#f3f9ff"><td>{{ row.class }}</td><td>{{ row.precision|round(4) }}</td><td>{{ row.recall|round(4) }}</td><td>{{ row['f1-score']|round(4) }}</td><td>{{ row.support|int }}</td></tr>
+      {% endfor %}
+      <tr style="background:#e8ffee;font-weight:bold"><td colspan="4" style="text-align:right">Accuracy</td><td>{{ (test_accuracy_row|default(0.0))|round(4) }}</td></tr>
+    </tbody>
+  </table>
+  <div style="padding:8px 12px"><img src="{{ test_cm_path }}" alt="Test confusion matrix" style="width:100%;border-radius:6px"/></div>
+</div>
+
+<!-- Status (Info) Panel -->
+<div id="info-panel">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:8px"><span style="font-size:18px">🧠</span>
+      <strong id="info-title" style="color:var(--primary)">Prediction Status Guide</strong></div>
+    <button onclick="closeInfo()" style="background:none;border:none;color:var(--primary);font-weight:bold;cursor:pointer">✖</button>
+  </div>
+  <ul style="padding-left:18px;margin:0">
+    <li style="color:var(--success)">✅ <b>Normal:</b> Automated prediction completed safely.</li>
+    <li style="color:var(--warning)">⚠️ <b>Low Confidence / Moderate:</b> Manual review advised.</li>
+    <li style="color:var(--danger)">❌ <b>Critical / Unreliable:</b> Manual review required.</li>
+  </ul>
+  <hr style="margin:10px 0;border:none;border-top:1px solid rgba(0,0,0,0.06)">
+  <div><b>Current status:</b>
+    <div id="info-message" style="margin-top:6px;font-weight:bold;color:#333">{{ warning or 'No prediction yet.' }}</div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // file UI + spinner
+  const input = document.getElementById('file-upload');
+  const fileName = document.getElementById('file-name');
+  const spinner = document.getElementById('spinner-overlay');
+  if (input) input.addEventListener('change', () => { if (fileName) fileName.textContent = input.files[0]?.name || 'No file chosen'; });
+  const uploadForm = document.getElementById('upload-form');
+  if (uploadForm) uploadForm.addEventListener('submit', () => { if (spinner) spinner.style.display = 'flex'; });
+
+  // status coloring
+  const warningType = "{{ warning_type or '' }}";
+  const liveCard  = document.getElementById('live-card');
+  const liveDot   = document.getElementById('live-dot');
+  const infoPanel = document.getElementById('info-panel');
+  const titleEl   = document.getElementById('info-title');
+  const msgEl     = document.getElementById('info-message');
+  let color = null;
+  if (warningType === 'normal') color = 'var(--success)';
+  else if (warningType === 'low_conf' || warningType === 'moderate') color = 'var(--warning)';
+  else if (warningType) color = 'var(--danger)';
+  if (color) {
+    if (infoPanel) infoPanel.style.borderLeftColor = color;
+    if (titleEl)   titleEl.style.color = color;
+    if (msgEl)     msgEl.style.color = color;
+    if (liveDot)   liveDot.style.background = color;
+    if (liveCard)  liveCard.style.borderLeftColor = color;
+  }
+});
+
+// modal
+function openModal(el){ const m=document.getElementById('imgModal'), i=document.getElementById('modalImg'); if(m&&i){m.style.display='block'; i.src=el.src;} }
+function closeModal(){ const m=document.getElementById('imgModal'), i=document.getElementById('modalImg'); if(m&&i){m.style.display='none'; i.src='';} }
+
+// slide panels
+let activePanel=null;
+function toggleReport(type){
+  const train=document.getElementById('train-panel'); const test=document.getElementById('test-panel');
+  if(type==='train'){
+    if(activePanel==='train'){closeReport('train'); activePanel=null; return;}
+    closeReport('test'); if(train) train.style.left='20px'; activePanel='train';
+  } else {
+    if(activePanel==='test'){closeReport('test'); activePanel=null; return;}
+    closeReport('train'); if(test) test.style.left='20px'; activePanel='test';
+  }
+}
+function closeReport(type){ const el=document.getElementById(type+'-panel'); if(el) el.style.left='-420px'; }
+
+// status panel
+function showInfo(){ const p=document.getElementById('info-panel'); if(p) p.style.right='20px'; }
+function closeInfo(){ const p=document.getElementById('info-panel'); if(p) p.style.right='-420px'; }
+</script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

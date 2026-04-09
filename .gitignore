@@ -1,0 +1,38 @@
+# 🔹 Python cache
+_pycache_/
+*.pyc
+
+# 🔹 Virtual environment
+venv/
+
+# 🔹 Uploads (runtime images)
+uploads/
+
+# 🔹 Dataset (very large)
+dataset/
+
+# 🔹 Model weights (large)
+*.pt
+*.pth
+
+# 🔹 Generated features
+train_features.pt
+
+# 🔹 CSV results (generated)
+results_*.csv
+
+# 🔹 Metadata
+lime_metadata.json
+
+# 🔹 Database
+users.db
+
+# 🔹 System files
+.DS_Store
+Thumbs.db
+
+# 🔹 VS Code settings
+.vscode/
+
+# 🔹 Jupyter checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title or "Brain Tumor MRI Classification" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <style>
+    :root { --primary:#1e90ff; --success:#28a745; --warning:#ff9800; --danger:#f44336; --glass:rgba(245,250,255,0.97); }
+    html,body{margin:0;background:#f5f7fb;font-family:'Segoe UI',Arial,sans-serif;color:#0f1724;}
+    .topbar{display:flex;flex-direction:column;align-items:center;justify-content:center;margin:12px 0 10px;}
+    .topbar .title{font-size:1.9rem;font-weight:800;color:var(--primary);margin:0 0 8px;}
+    .welcome-box{background:#4ecb89;color:#fff;font-weight:600;border-radius:6px;padding:10px 18px;text-align:center;max-width:800px;box-shadow:0 4px 12px rgba(0,0,0,.05);}
+    .nav-row{margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;width:100%;max-width:1100px;}
+    .nav-left,.nav-right{display:flex;align-items:center;gap:10px;}
+    .nav-btn{background:#fff;color:var(--primary);font-weight:800;border:1px solid rgba(30,144,255,.22);border-radius:12px;padding:9px 14px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;box-shadow:0 6px 18px rgba(30,144,255,.08), inset 0 0 0 2px rgba(30,144,255,.06);transition:box-shadow .2s,transform .04s;}
+    .nav-btn:hover{box-shadow:0 10px 24px rgba(30,144,255,.16);}
+    .nav-right a{color:var(--primary);font-weight:600;text-decoration:none;}
+    .nav-right a:hover{text-decoration:underline;}
+    .container{max-width:1200px;margin:0 auto;padding:16px;}
+    /* flash */
+    .flash{padding:10px 16px;border-radius:10px;margin:8px 0;font-weight:600;text-align:center}
+    .is-success{background:#ecfdf5;color:#065f46;}
+    .is-danger{background:#fef2f2;color:#991b1b;}
+    .is-info{background:#eff6ff;color:#1e40af;}
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  {% set _endpoint = request.endpoint or '' %}
+  {% set show_nav = user and (_endpoint not in ['login','register']) %}
+
+  <div class="topbar">
+    <h1 class="title">{{ title or "Brain Tumor Classification & Explainability" }}</h1>
+
+    {% if show_nav %}
+      <div class="welcome-box">Welcome, {{ user }}!</div>
+    {% endif %}
+
+    {% if show_nav %}
+      <div class="nav-row">
+        <div class="nav-left">
+          {% block nav_left %}{% endblock %}
+        </div>
+        <div class="nav-right">
+          Signed in as <strong>{{ user }}</strong> &nbsp;|&nbsp;
+          <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          {% if category != 'login_welcome' %}
+            <div class="flash is-{{ 'danger' if category=='danger' else ('success' if category=='success' else 'info') }}">{{ msg }}</div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </div>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
