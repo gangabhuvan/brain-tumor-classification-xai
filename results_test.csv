@@ -1,0 +1,1312 @@
+filename,true_class,predicted_class,confidence,similarity
+Te-glTr_0000.jpg,Glioma,Glioma,100.0,98.39
+Te-glTr_0001.jpg,Glioma,Glioma,100.0,98.89
+Te-glTr_0002.jpg,Glioma,Glioma,100.0,99.57
+Te-glTr_0003.jpg,Glioma,Glioma,99.97,76.49
+Te-glTr_0004.jpg,Glioma,Glioma,99.96,93.53
+Te-glTr_0005.jpg,Glioma,Glioma,100.0,97.16
+Te-glTr_0006.jpg,Glioma,Glioma,100.0,95.2
+Te-glTr_0007.jpg,Glioma,Glioma,100.0,99.57
+Te-glTr_0008.jpg,Glioma,Glioma,100.0,99.02
+Te-glTr_0009.jpg,Glioma,Glioma,100.0,99.52
+Te-gl_0010.jpg,Glioma,Glioma,100.0,94.13
+Te-gl_0011.jpg,Glioma,Glioma,100.0,98.69
+Te-gl_0012.jpg,Glioma,Glioma,99.99,98.61
+Te-gl_0013.jpg,Glioma,Glioma,99.99,92.52
+Te-gl_0014.jpg,Glioma,Glioma,100.0,99.56
+Te-gl_0015.jpg,Glioma,Glioma,100.0,97.1
+Te-gl_0016.jpg,Glioma,Glioma,100.0,99.72
+Te-gl_0017.jpg,Glioma,Glioma,100.0,99.48
+Te-gl_0018.jpg,Glioma,Glioma,100.0,99.59
+Te-gl_0019.jpg,Glioma,Glioma,99.96,93.66
+Te-gl_0020.jpg,Glioma,Glioma,100.0,92.95
+Te-gl_0021.jpg,Glioma,Glioma,100.0,97.82
+Te-gl_0022.jpg,Glioma,Glioma,100.0,96.4
+Te-gl_0023.jpg,Glioma,Glioma,99.97,80.65
+Te-gl_0024.jpg,Glioma,Glioma,99.87,81.6
+Te-gl_0025.jpg,Glioma,Glioma,100.0,98.85
+Te-gl_0026.jpg,Glioma,Glioma,100.0,99.66
+Te-gl_0027.jpg,Glioma,Glioma,100.0,99.54
+Te-gl_0028.jpg,Glioma,Glioma,100.0,97.04
+Te-gl_0029.jpg,Glioma,Glioma,99.87,81.6
+Te-gl_0030.jpg,Glioma,Glioma,100.0,92.06
+Te-gl_0031.jpg,Glioma,Glioma,100.0,99.56
+Te-gl_0032.jpg,Glioma,Glioma,100.0,99.44
+Te-gl_0033.jpg,Glioma,Glioma,100.0,99.38
+Te-gl_0034.jpg,Glioma,Glioma,100.0,99.6
+Te-gl_0035.jpg,Glioma,Glioma,100.0,99.44
+Te-gl_0036.jpg,Glioma,Glioma,100.0,99.16
+Te-gl_0037.jpg,Glioma,Glioma,100.0,98.54
+Te-gl_0038.jpg,Glioma,Glioma,100.0,99.53
+Te-gl_0039.jpg,Glioma,Glioma,100.0,96.6
+Te-gl_0040.jpg,Glioma,Glioma,100.0,99.72
+Te-gl_0041.jpg,Glioma,Glioma,100.0,99.57
+Te-gl_0042.jpg,Glioma,Glioma,100.0,98.33
+Te-gl_0043.jpg,Glioma,Glioma,99.99,97.7
+Te-gl_0044.jpg,Glioma,Glioma,99.99,88.08
+Te-gl_0045.jpg,Glioma,Glioma,99.99,97.91
+Te-gl_0046.jpg,Glioma,Glioma,99.99,91.7
+Te-gl_0047.jpg,Glioma,Glioma,99.96,93.28
+Te-gl_0048.jpg,Glioma,Glioma,100.0,97.63
+Te-gl_0049.jpg,Glioma,Glioma,100.0,99.25
+Te-gl_0050.jpg,Glioma,Glioma,100.0,95.98
+Te-gl_0051.jpg,Glioma,Glioma,100.0,99.58
+Te-gl_0052.jpg,Glioma,Glioma,100.0,99.4
+Te-gl_0053.jpg,Glioma,Glioma,100.0,99.5
+Te-gl_0054.jpg,Glioma,Glioma,100.0,99.64
+Te-gl_0055.jpg,Glioma,Glioma,100.0,99.59
+Te-gl_0056.jpg,Glioma,Glioma,100.0,97.41
+Te-gl_0057.jpg,Glioma,Glioma,99.98,89.03
+Te-gl_0058.jpg,Glioma,Glioma,100.0,99.63
+Te-gl_0059.jpg,Glioma,Glioma,100.0,99.72
+Te-gl_0060.jpg,Glioma,Glioma,100.0,99.32
+Te-gl_0061.jpg,Glioma,Glioma,100.0,99.23
+Te-gl_0062.jpg,Glioma,Glioma,100.0,99.49
+Te-gl_0063.jpg,Glioma,Glioma,100.0,98.59
+Te-gl_0064.jpg,Glioma,Glioma,100.0,99.32
+Te-gl_0065.jpg,Glioma,Glioma,100.0,99.63
+Te-gl_0066.jpg,Glioma,Glioma,100.0,99.18
+Te-gl_0067.jpg,Glioma,Glioma,100.0,99.44
+Te-gl_0068.jpg,Glioma,Glioma,100.0,99.11
+Te-gl_0069.jpg,Glioma,Glioma,100.0,99.53
+Te-gl_0070.jpg,Glioma,Glioma,100.0,98.99
+Te-gl_0071.jpg,Glioma,Glioma,100.0,99.72
+Te-gl_0072.jpg,Glioma,Glioma,100.0,99.16
+Te-gl_0073.jpg,Glioma,Glioma,100.0,98.88
+Te-gl_0074.jpg,Glioma,Glioma,100.0,96.99
+Te-gl_0075.jpg,Glioma,Glioma,100.0,99.22
+Te-gl_0076.jpg,Glioma,Glioma,100.0,99.11
+Te-gl_0077.jpg,Glioma,Glioma,100.0,99.15
+Te-gl_0078.jpg,Glioma,Glioma,100.0,98.06
+Te-gl_0079.jpg,Glioma,Glioma,100.0,97.86
+Te-gl_0080.jpg,Glioma,Glioma,100.0,98.7
+Te-gl_0081.jpg,Glioma,Glioma,99.95,78.27
+Te-gl_0082.jpg,Glioma,Glioma,100.0,98.93
+Te-gl_0083.jpg,Glioma,Glioma,99.94,81.35
+Te-gl_0084.jpg,Glioma,Glioma,99.99,97.82
+Te-gl_0085.jpg,Glioma,Glioma,100.0,97.23
+Te-gl_0086.jpg,Glioma,Glioma,100.0,98.12
+Te-gl_0087.jpg,Glioma,Glioma,100.0,95.85
+Te-gl_0088.jpg,Glioma,Glioma,100.0,96.01
+Te-gl_0089.jpg,Glioma,Glioma,99.98,78.01
+Te-gl_0090.jpg,Glioma,Glioma,100.0,94.46
+Te-gl_0091.jpg,Glioma,Glioma,100.0,95.31
+Te-gl_0092.jpg,Glioma,Glioma,100.0,95.34
+Te-gl_0093.jpg,Glioma,Glioma,99.99,87.55
+Te-gl_0094.jpg,Glioma,Glioma,98.61,69.0
+Te-gl_0095.jpg,Glioma,Glioma,100.0,98.46
+Te-gl_0096.jpg,Glioma,Glioma,100.0,92.88
+Te-gl_0097.jpg,Glioma,Glioma,100.0,93.62
+Te-gl_0098.jpg,Glioma,Glioma,100.0,98.84
+Te-gl_0099.jpg,Glioma,Glioma,99.99,93.53
+Te-gl_0100.jpg,Glioma,Glioma,100.0,99.14
+Te-gl_0101.jpg,Glioma,Glioma,99.99,84.1
+Te-gl_0102.jpg,Glioma,Glioma,99.99,94.9
+Te-gl_0103.jpg,Glioma,Glioma,100.0,95.66
+Te-gl_0104.jpg,Glioma,Glioma,99.99,96.24
+Te-gl_0105.jpg,Glioma,Glioma,100.0,96.89
+Te-gl_0106.jpg,Glioma,Glioma,99.99,79.36
+Te-gl_0107.jpg,Glioma,Glioma,99.99,87.15
+Te-gl_0108.jpg,Glioma,Glioma,100.0,98.33
+Te-gl_0109.jpg,Glioma,Glioma,99.65,79.23
+Te-gl_0110.jpg,Glioma,Glioma,100.0,91.47
+Te-gl_0111.jpg,Glioma,Glioma,100.0,97.85
+Te-gl_0112.jpg,Glioma,Glioma,100.0,97.79
+Te-gl_0113.jpg,Glioma,Glioma,100.0,96.24
+Te-gl_0114.jpg,Glioma,Glioma,99.77,78.33
+Te-gl_0115.jpg,Glioma,Glioma,99.99,90.48
+Te-gl_0116.jpg,Glioma,Glioma,100.0,98.5
+Te-gl_0117.jpg,Glioma,Glioma,100.0,99.51
+Te-gl_0118.jpg,Glioma,Glioma,100.0,97.0
+Te-gl_0119.jpg,Glioma,Glioma,100.0,96.3
+Te-gl_0120.jpg,Glioma,Glioma,100.0,99.26
+Te-gl_0121.jpg,Glioma,Glioma,100.0,99.19
+Te-gl_0122.jpg,Glioma,Glioma,99.99,91.53
+Te-gl_0123.jpg,Glioma,Glioma,100.0,97.62
+Te-gl_0124.jpg,Glioma,Glioma,100.0,97.76
+Te-gl_0125.jpg,Glioma,Glioma,99.77,88.05
+Te-gl_0126.jpg,Glioma,Glioma,99.99,91.19
+Te-gl_0127.jpg,Glioma,Glioma,100.0,99.18
+Te-gl_0128.jpg,Glioma,Glioma,100.0,98.89
+Te-gl_0129.jpg,Glioma,Glioma,100.0,98.14
+Te-gl_0130.jpg,Glioma,Glioma,100.0,97.67
+Te-gl_0131.jpg,Glioma,Glioma,100.0,98.97
+Te-gl_0132.jpg,Glioma,Glioma,100.0,98.85
+Te-gl_0133.jpg,Glioma,Glioma,100.0,98.49
+Te-gl_0134.jpg,Glioma,Glioma,100.0,98.88
+Te-gl_0135.jpg,Glioma,Glioma,100.0,98.86
+Te-gl_0136.jpg,Glioma,Glioma,100.0,98.85
+Te-gl_0137.jpg,Glioma,Glioma,100.0,98.1
+Te-gl_0138.jpg,Glioma,Glioma,100.0,98.51
+Te-gl_0139.jpg,Glioma,Glioma,100.0,97.78
+Te-gl_0140.jpg,Glioma,Glioma,100.0,97.54
+Te-gl_0141.jpg,Glioma,Glioma,100.0,97.29
+Te-gl_0142.jpg,Glioma,Glioma,100.0,99.67
+Te-gl_0143.jpg,Glioma,Glioma,100.0,99.31
+Te-gl_0144.jpg,Glioma,Glioma,100.0,97.0
+Te-gl_0145.jpg,Glioma,Glioma,100.0,98.64
+Te-gl_0146.jpg,Glioma,Glioma,100.0,98.72
+Te-gl_0147.jpg,Glioma,Glioma,100.0,96.86
+Te-gl_0148.jpg,Glioma,Glioma,100.0,98.22
+Te-gl_0149.jpg,Glioma,Glioma,100.0,99.59
+Te-gl_0150.jpg,Glioma,Glioma,100.0,98.72
+Te-gl_0151.jpg,Glioma,Glioma,100.0,95.62
+Te-gl_0152.jpg,Glioma,Glioma,99.91,92.15
+Te-gl_0153.jpg,Glioma,Glioma,100.0,98.89
+Te-gl_0154.jpg,Glioma,Glioma,100.0,99.46
+Te-gl_0155.jpg,Glioma,Glioma,100.0,98.59
+Te-gl_0156.jpg,Glioma,Glioma,100.0,96.64
+Te-gl_0157.jpg,Glioma,Glioma,100.0,98.42
+Te-gl_0158.jpg,Glioma,Glioma,99.98,96.5
+Te-gl_0159.jpg,Glioma,Glioma,99.97,90.09
+Te-gl_0160.jpg,Glioma,Glioma,100.0,93.3
+Te-gl_0161.jpg,Glioma,Glioma,100.0,92.74
+Te-gl_0162.jpg,Glioma,Glioma,100.0,95.12
+Te-gl_0163.jpg,Glioma,Glioma,100.0,93.98
+Te-gl_0164.jpg,Glioma,Glioma,100.0,98.04
+Te-gl_0165.jpg,Glioma,Glioma,100.0,97.49
+Te-gl_0166.jpg,Glioma,Glioma,100.0,98.04
+Te-gl_0167.jpg,Glioma,Glioma,100.0,96.21
+Te-gl_0168.jpg,Glioma,Glioma,99.99,93.29
+Te-gl_0169.jpg,Glioma,Glioma,100.0,91.12
+Te-gl_0170.jpg,Glioma,Glioma,100.0,96.77
+Te-gl_0171.jpg,Glioma,Glioma,100.0,97.93
+Te-gl_0172.jpg,Glioma,Glioma,100.0,96.41
+Te-gl_0173.jpg,Glioma,Glioma,100.0,96.71
+Te-gl_0174.jpg,Glioma,Glioma,100.0,98.64
+Te-gl_0175.jpg,Glioma,Glioma,100.0,97.62
+Te-gl_0176.jpg,Glioma,Glioma,100.0,97.0
+Te-gl_0177.jpg,Glioma,Glioma,100.0,96.92
+Te-gl_0178.jpg,Glioma,Glioma,100.0,92.75
+Te-gl_0179.jpg,Glioma,Glioma,100.0,97.27
+Te-gl_0180.jpg,Glioma,Glioma,100.0,97.04
+Te-gl_0181.jpg,Glioma,Glioma,100.0,98.38
+Te-gl_0182.jpg,Glioma,Glioma,100.0,97.36
+Te-gl_0183.jpg,Glioma,Glioma,100.0,98.03
+Te-gl_0184.jpg,Glioma,Glioma,100.0,95.49
+Te-gl_0185.jpg,Glioma,Glioma,100.0,97.04
+Te-gl_0186.jpg,Glioma,Glioma,100.0,95.31
+Te-gl_0187.jpg,Glioma,Glioma,100.0,98.43
+Te-gl_0188.jpg,Glioma,Glioma,100.0,96.81
+Te-gl_0189.jpg,Glioma,Glioma,100.0,97.06
+Te-gl_0190.jpg,Glioma,Glioma,100.0,96.63
+Te-gl_0191.jpg,Glioma,Glioma,100.0,95.97
+Te-gl_0192.jpg,Glioma,Glioma,99.64,87.21
+Te-gl_0193.jpg,Glioma,Glioma,100.0,98.07
+Te-gl_0194.jpg,Glioma,Glioma,100.0,97.91
+Te-gl_0195.jpg,Glioma,Glioma,100.0,98.56
+Te-gl_0196.jpg,Glioma,Glioma,100.0,97.66
+Te-gl_0197.jpg,Glioma,Glioma,100.0,96.15
+Te-gl_0198.jpg,Glioma,Glioma,100.0,95.94
+Te-gl_0199.jpg,Glioma,Glioma,100.0,96.37
+Te-gl_0200.jpg,Glioma,Glioma,100.0,97.89
+Te-gl_0201.jpg,Glioma,Glioma,100.0,97.94
+Te-gl_0202.jpg,Glioma,Glioma,100.0,96.23
+Te-gl_0203.jpg,Glioma,Glioma,100.0,92.68
+Te-gl_0204.jpg,Glioma,Glioma,100.0,95.44
+Te-gl_0205.jpg,Glioma,Glioma,100.0,96.11
+Te-gl_0206.jpg,Glioma,Glioma,100.0,91.35
+Te-gl_0207.jpg,Glioma,Glioma,100.0,94.2
+Te-gl_0208.jpg,Glioma,Glioma,100.0,95.75
+Te-gl_0209.jpg,Glioma,Glioma,100.0,97.81
+Te-gl_0210.jpg,Glioma,Glioma,100.0,97.93
+Te-gl_0211.jpg,Glioma,Glioma,100.0,96.9
+Te-gl_0212.jpg,Glioma,Glioma,100.0,97.9
+Te-gl_0213.jpg,Glioma,Glioma,100.0,97.05
+Te-gl_0214.jpg,Glioma,Glioma,100.0,98.29
+Te-gl_0215.jpg,Glioma,Glioma,100.0,98.06
+Te-gl_0216.jpg,Glioma,Glioma,100.0,97.91
+Te-gl_0217.jpg,Glioma,Glioma,100.0,97.26
+Te-gl_0218.jpg,Glioma,Glioma,100.0,97.53
+Te-gl_0219.jpg,Glioma,Glioma,100.0,97.59
+Te-gl_0220.jpg,Glioma,Glioma,100.0,97.67
+Te-gl_0221.jpg,Glioma,Glioma,100.0,96.82
+Te-gl_0222.jpg,Glioma,Glioma,99.99,91.53
+Te-gl_0223.jpg,Glioma,Glioma,100.0,95.7
+Te-gl_0224.jpg,Glioma,Glioma,100.0,95.12
+Te-gl_0225.jpg,Glioma,Glioma,100.0,95.57
+Te-gl_0226.jpg,Glioma,Glioma,100.0,97.11
+Te-gl_0227.jpg,Glioma,Glioma,100.0,97.59
+Te-gl_0228.jpg,Glioma,Glioma,100.0,97.52
+Te-gl_0229.jpg,Glioma,Glioma,100.0,92.77
+Te-gl_0230.jpg,Glioma,Glioma,99.96,92.75
+Te-gl_0231.jpg,Glioma,Glioma,99.99,90.6
+Te-gl_0232.jpg,Glioma,Glioma,99.67,76.81
+Te-gl_0233.jpg,Glioma,Glioma,100.0,90.14
+Te-gl_0234.jpg,Glioma,Glioma,99.97,78.42
+Te-gl_0235.jpg,Glioma,Glioma,99.99,90.77
+Te-gl_0236.jpg,Glioma,Glioma,100.0,91.24
+Te-gl_0237.jpg,Glioma,Glioma,99.96,81.04
+Te-gl_0238.jpg,Glioma,Glioma,100.0,89.67
+Te-gl_0239.jpg,Glioma,Glioma,99.78,83.54
+Te-gl_0240.jpg,Glioma,Glioma,100.0,92.6
+Te-gl_0241.jpg,Glioma,Glioma,100.0,97.21
+Te-gl_0242.jpg,Glioma,Glioma,100.0,89.17
+Te-gl_0243.jpg,Glioma,Glioma,99.99,97.56
+Te-gl_0244.jpg,Glioma,Glioma,100.0,94.36
+Te-gl_0245.jpg,Glioma,Glioma,99.99,93.38
+Te-gl_0246.jpg,Glioma,Glioma,100.0,95.97
+Te-gl_0247.jpg,Glioma,Glioma,99.98,87.11
+Te-gl_0248.jpg,Glioma,Glioma,100.0,92.73
+Te-gl_0249.jpg,Glioma,Glioma,99.99,86.23
+Te-gl_0250.jpg,Glioma,Glioma,99.96,88.02
+Te-gl_0251.jpg,Glioma,Glioma,99.98,87.98
+Te-gl_0252.jpg,Glioma,Glioma,100.0,90.68
+Te-gl_0253.jpg,Glioma,Glioma,99.99,92.68
+Te-gl_0254.jpg,Glioma,Glioma,100.0,92.92
+Te-gl_0255.jpg,Glioma,Glioma,99.99,87.73
+Te-gl_0256.jpg,Glioma,Glioma,100.0,92.84
+Te-gl_0257.jpg,Glioma,Glioma,100.0,89.48
+Te-gl_0258.jpg,Glioma,Glioma,100.0,91.14
+Te-gl_0259.jpg,Glioma,Meningioma,96.59,74.09
+Te-gl_0260.jpg,Glioma,Glioma,100.0,93.6
+Te-gl_0261.jpg,Glioma,Glioma,99.78,90.47
+Te-gl_0262.jpg,Glioma,Glioma,99.99,88.66
+Te-gl_0263.jpg,Glioma,Glioma,99.99,87.24
+Te-gl_0264.jpg,Glioma,Glioma,99.22,89.54
+Te-gl_0265.jpg,Glioma,Glioma,94.58,72.24
+Te-gl_0266.jpg,Glioma,Glioma,100.0,95.29
+Te-gl_0267.jpg,Glioma,Glioma,99.95,83.29
+Te-gl_0268.jpg,Glioma,Glioma,98.22,69.21
+Te-gl_0269.jpg,Glioma,Glioma,100.0,94.22
+Te-gl_0270.jpg,Glioma,Glioma,100.0,96.14
+Te-gl_0271.jpg,Glioma,Glioma,99.9,81.78
+Te-gl_0272.jpg,Glioma,Glioma,99.99,89.8
+Te-gl_0273.jpg,Glioma,Glioma,99.99,90.4
+Te-gl_0274.jpg,Glioma,Glioma,100.0,97.5
+Te-gl_0275.jpg,Glioma,Glioma,100.0,93.9
+Te-gl_0276.jpg,Glioma,Glioma,100.0,95.26
+Te-gl_0277.jpg,Glioma,Glioma,100.0,91.88
+Te-gl_0278.jpg,Glioma,Glioma,100.0,96.73
+Te-gl_0279.jpg,Glioma,Glioma,99.99,96.84
+Te-gl_0280.jpg,Glioma,Glioma,99.98,95.31
+Te-gl_0281.jpg,Glioma,Glioma,100.0,97.65
+Te-gl_0282.jpg,Glioma,Glioma,99.99,93.65
+Te-gl_0283.jpg,Glioma,Glioma,99.99,93.52
+Te-gl_0284.jpg,Glioma,Glioma,100.0,96.39
+Te-gl_0285.jpg,Glioma,Glioma,99.99,97.56
+Te-gl_0286.jpg,Glioma,Glioma,100.0,98.38
+Te-gl_0287.jpg,Glioma,Glioma,100.0,99.45
+Te-gl_0288.jpg,Glioma,Glioma,100.0,98.73
+Te-gl_0289.jpg,Glioma,Glioma,99.99,84.89
+Te-gl_0290.jpg,Glioma,Glioma,99.99,96.67
+Te-gl_0291.jpg,Glioma,Glioma,100.0,97.98
+Te-gl_0292.jpg,Glioma,Glioma,100.0,93.22
+Te-gl_0293.jpg,Glioma,Glioma,100.0,97.25
+Te-gl_0294.jpg,Glioma,Glioma,100.0,94.9
+Te-gl_0295.jpg,Glioma,Glioma,99.99,88.46
+Te-gl_0296.jpg,Glioma,Glioma,100.0,98.95
+Te-gl_0297.jpg,Glioma,Glioma,100.0,99.44
+Te-gl_0298.jpg,Glioma,Glioma,100.0,98.67
+Te-gl_0299.jpg,Glioma,Glioma,100.0,97.83
+Te-meTr_0000.jpg,Meningioma,Meningioma,100.0,97.42
+Te-meTr_0001.jpg,Meningioma,Meningioma,99.89,100.0
+Te-meTr_0002.jpg,Meningioma,Meningioma,99.96,74.8
+Te-meTr_0003.jpg,Meningioma,Meningioma,100.0,100.0
+Te-meTr_0004.jpg,Meningioma,Meningioma,99.99,100.0
+Te-meTr_0005.jpg,Meningioma,Meningioma,99.99,100.0
+Te-meTr_0006.jpg,Meningioma,Meningioma,100.0,100.0
+Te-meTr_0007.jpg,Meningioma,Meningioma,99.86,100.0
+Te-meTr_0008.jpg,Meningioma,Meningioma,99.99,100.0
+Te-meTr_0009.jpg,Meningioma,Meningioma,99.96,100.0
+Te-me_0010.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0011.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0012.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0013.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0014.jpg,Meningioma,Meningioma,100.0,97.97
+Te-me_0015.jpg,Meningioma,Meningioma,99.85,100.0
+Te-me_0016.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0017.jpg,Meningioma,Meningioma,99.99,99.98
+Te-me_0018.jpg,Meningioma,Meningioma,99.99,99.93
+Te-me_0019.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0020.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0021.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0022.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0023.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0024.jpg,Meningioma,Meningioma,99.95,100.0
+Te-me_0025.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0026.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0027.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0028.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0029.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0030.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0031.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0032.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0033.jpg,Meningioma,Meningioma,99.99,98.22
+Te-me_0034.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0035.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0036.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0037.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0038.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0039.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0040.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0041.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0042.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0043.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0044.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0045.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0046.jpg,Meningioma,Meningioma,98.92,100.0
+Te-me_0047.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0048.jpg,Meningioma,Meningioma,99.97,100.0
+Te-me_0049.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0050.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0051.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0052.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0053.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0054.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0055.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0056.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0057.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0058.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0059.jpg,Meningioma,Meningioma,99.91,72.34
+Te-me_0060.jpg,Meningioma,Meningioma,99.91,100.0
+Te-me_0061.jpg,Meningioma,Meningioma,100.0,98.71
+Te-me_0062.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0063.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0064.jpg,Meningioma,Meningioma,57.44,56.4
+Te-me_0065.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0066.jpg,Meningioma,Meningioma,99.91,100.0
+Te-me_0067.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0068.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0069.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0070.jpg,Meningioma,Meningioma,99.97,100.0
+Te-me_0071.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0072.jpg,Meningioma,Meningioma,99.85,100.0
+Te-me_0073.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0074.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0075.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0076.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0077.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0078.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0079.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0080.jpg,Meningioma,Meningioma,99.6,100.0
+Te-me_0081.jpg,Meningioma,Meningioma,99.96,100.0
+Te-me_0082.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0083.jpg,Meningioma,Meningioma,99.97,100.0
+Te-me_0084.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0085.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0086.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0087.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0088.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0089.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0090.jpg,Meningioma,Meningioma,100.0,99.98
+Te-me_0091.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0092.jpg,Meningioma,Meningioma,99.95,100.0
+Te-me_0093.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0094.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0095.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0096.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0097.jpg,Meningioma,Meningioma,99.92,100.0
+Te-me_0098.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0099.jpg,Meningioma,Meningioma,99.93,100.0
+Te-me_0100.jpg,Meningioma,Meningioma,96.59,100.0
+Te-me_0101.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0102.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0103.jpg,Meningioma,Meningioma,99.88,100.0
+Te-me_0104.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0105.jpg,Meningioma,Meningioma,99.97,100.0
+Te-me_0106.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0107.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0108.jpg,Meningioma,Meningioma,99.92,100.0
+Te-me_0109.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0110.jpg,Meningioma,Meningioma,99.97,87.64
+Te-me_0111.jpg,Meningioma,Meningioma,63.45,100.0
+Te-me_0112.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0113.jpg,Meningioma,Meningioma,99.99,100.0
+Te-me_0114.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0115.jpg,Meningioma,Meningioma,99.99,95.37
+Te-me_0116.jpg,Meningioma,Meningioma,99.99,95.75
+Te-me_0117.jpg,Meningioma,Meningioma,100.0,97.49
+Te-me_0118.jpg,Meningioma,Meningioma,100.0,95.2
+Te-me_0119.jpg,Meningioma,Meningioma,100.0,97.18
+Te-me_0120.jpg,Meningioma,Meningioma,99.92,94.57
+Te-me_0121.jpg,Meningioma,Meningioma,99.99,97.64
+Te-me_0122.jpg,Meningioma,Meningioma,99.99,91.73
+Te-me_0123.jpg,Meningioma,Meningioma,100.0,99.07
+Te-me_0124.jpg,Meningioma,Meningioma,99.99,98.03
+Te-me_0125.jpg,Meningioma,Meningioma,100.0,98.31
+Te-me_0126.jpg,Meningioma,Meningioma,100.0,98.12
+Te-me_0127.jpg,Meningioma,Meningioma,100.0,98.68
+Te-me_0128.jpg,Meningioma,Meningioma,99.99,92.0
+Te-me_0129.jpg,Meningioma,Meningioma,100.0,98.93
+Te-me_0130.jpg,Meningioma,Meningioma,100.0,98.11
+Te-me_0131.jpg,Meningioma,Meningioma,99.99,96.6
+Te-me_0132.jpg,Meningioma,Meningioma,100.0,99.31
+Te-me_0133.jpg,Meningioma,Meningioma,100.0,98.24
+Te-me_0134.jpg,Meningioma,Meningioma,99.72,98.32
+Te-me_0135.jpg,Meningioma,Meningioma,100.0,100.0
+Te-me_0136.jpg,Meningioma,Meningioma,99.98,87.85
+Te-me_0137.jpg,Meningioma,Meningioma,99.99,97.22
+Te-me_0138.jpg,Meningioma,Meningioma,100.0,98.93
+Te-me_0139.jpg,Meningioma,Meningioma,100.0,97.72
+Te-me_0140.jpg,Meningioma,Meningioma,99.96,74.8
+Te-me_0141.jpg,Meningioma,Meningioma,100.0,94.36
+Te-me_0142.jpg,Meningioma,Meningioma,99.47,94.91
+Te-me_0143.jpg,Meningioma,Meningioma,99.98,100.0
+Te-me_0144.jpg,Meningioma,Meningioma,100.0,99.07
+Te-me_0145.jpg,Meningioma,Meningioma,99.97,87.64
+Te-me_0146.jpg,Meningioma,Meningioma,99.94,95.11
+Te-me_0147.jpg,Meningioma,Meningioma,100.0,99.13
+Te-me_0148.jpg,Meningioma,Meningioma,99.95,95.18
+Te-me_0149.jpg,Meningioma,Meningioma,100.0,98.76
+Te-me_0150.jpg,Meningioma,Meningioma,99.99,98.39
+Te-me_0151.jpg,Meningioma,Meningioma,100.0,95.94
+Te-me_0152.jpg,Meningioma,Meningioma,99.99,96.15
+Te-me_0153.jpg,Meningioma,Meningioma,99.94,92.45
+Te-me_0154.jpg,Meningioma,Meningioma,100.0,99.11
+Te-me_0155.jpg,Meningioma,Meningioma,100.0,99.17
+Te-me_0156.jpg,Meningioma,Meningioma,90.53,91.63
+Te-me_0157.jpg,Meningioma,Meningioma,100.0,98.72
+Te-me_0158.jpg,Meningioma,Meningioma,100.0,96.7
+Te-me_0159.jpg,Meningioma,Meningioma,100.0,98.34
+Te-me_0160.jpg,Meningioma,Meningioma,100.0,98.84
+Te-me_0161.jpg,Meningioma,Meningioma,99.99,97.62
+Te-me_0162.jpg,Meningioma,Meningioma,99.99,96.96
+Te-me_0163.jpg,Meningioma,Meningioma,99.62,97.47
+Te-me_0164.jpg,Meningioma,Meningioma,99.94,99.01
+Te-me_0165.jpg,Meningioma,Meningioma,99.99,94.28
+Te-me_0166.jpg,Meningioma,Meningioma,99.98,97.42
+Te-me_0167.jpg,Meningioma,Meningioma,100.0,98.3
+Te-me_0168.jpg,Meningioma,Meningioma,100.0,98.07
+Te-me_0169.jpg,Meningioma,Meningioma,100.0,97.7
+Te-me_0170.jpg,Meningioma,Meningioma,100.0,96.86
+Te-me_0171.jpg,Meningioma,Meningioma,100.0,97.66
+Te-me_0172.jpg,Meningioma,Meningioma,100.0,99.28
+Te-me_0173.jpg,Meningioma,Meningioma,100.0,98.39
+Te-me_0174.jpg,Meningioma,Meningioma,100.0,98.91
+Te-me_0175.jpg,Meningioma,Meningioma,99.97,95.56
+Te-me_0176.jpg,Meningioma,Meningioma,100.0,98.87
+Te-me_0177.jpg,Meningioma,Meningioma,100.0,98.9
+Te-me_0178.jpg,Meningioma,Meningioma,100.0,97.58
+Te-me_0179.jpg,Meningioma,Meningioma,100.0,96.63
+Te-me_0180.jpg,Meningioma,Meningioma,100.0,99.17
+Te-me_0181.jpg,Meningioma,Meningioma,99.98,96.72
+Te-me_0182.jpg,Meningioma,Meningioma,100.0,96.59
+Te-me_0183.jpg,Meningioma,Meningioma,100.0,96.17
+Te-me_0184.jpg,Meningioma,Meningioma,100.0,97.94
+Te-me_0185.jpg,Meningioma,Meningioma,100.0,98.35
+Te-me_0186.jpg,Meningioma,Meningioma,100.0,98.29
+Te-me_0187.jpg,Meningioma,Meningioma,100.0,98.98
+Te-me_0188.jpg,Meningioma,Meningioma,100.0,97.9
+Te-me_0189.jpg,Meningioma,Meningioma,99.98,93.49
+Te-me_0190.jpg,Meningioma,Meningioma,100.0,97.32
+Te-me_0191.jpg,Meningioma,Meningioma,100.0,96.63
+Te-me_0192.jpg,Meningioma,Meningioma,100.0,98.39
+Te-me_0193.jpg,Meningioma,Meningioma,99.61,97.14
+Te-me_0194.jpg,Meningioma,Meningioma,100.0,96.18
+Te-me_0195.jpg,Meningioma,Meningioma,100.0,98.97
+Te-me_0196.jpg,Meningioma,Meningioma,100.0,97.8
+Te-me_0197.jpg,Meningioma,Meningioma,100.0,98.53
+Te-me_0198.jpg,Meningioma,Meningioma,100.0,98.89
+Te-me_0199.jpg,Meningioma,Meningioma,100.0,97.64
+Te-me_0200.jpg,Meningioma,Meningioma,100.0,99.42
+Te-me_0201.jpg,Meningioma,Meningioma,100.0,99.02
+Te-me_0202.jpg,Meningioma,Meningioma,99.99,96.24
+Te-me_0203.jpg,Meningioma,Meningioma,99.99,98.5
+Te-me_0204.jpg,Meningioma,Meningioma,99.99,92.78
+Te-me_0205.jpg,Meningioma,Meningioma,100.0,98.68
+Te-me_0206.jpg,Meningioma,Meningioma,100.0,98.67
+Te-me_0207.jpg,Meningioma,Meningioma,99.84,97.86
+Te-me_0208.jpg,Meningioma,Meningioma,100.0,97.48
+Te-me_0209.jpg,Meningioma,Meningioma,99.99,96.52
+Te-me_0210.jpg,Meningioma,Meningioma,100.0,98.8
+Te-me_0211.jpg,Meningioma,Meningioma,100.0,99.18
+Te-me_0212.jpg,Meningioma,Meningioma,100.0,99.26
+Te-me_0213.jpg,Meningioma,Meningioma,99.99,96.9
+Te-me_0214.jpg,Meningioma,Meningioma,100.0,98.7
+Te-me_0215.jpg,Meningioma,Meningioma,100.0,98.81
+Te-me_0216.jpg,Meningioma,Meningioma,100.0,96.38
+Te-me_0217.jpg,Meningioma,Meningioma,100.0,96.47
+Te-me_0218.jpg,Meningioma,Meningioma,100.0,96.78
+Te-me_0219.jpg,Meningioma,Meningioma,100.0,98.57
+Te-me_0220.jpg,Meningioma,Meningioma,100.0,99.27
+Te-me_0221.jpg,Meningioma,Meningioma,100.0,98.31
+Te-me_0222.jpg,Meningioma,Meningioma,99.98,92.19
+Te-me_0223.jpg,Meningioma,Meningioma,100.0,98.87
+Te-me_0224.jpg,Meningioma,Meningioma,99.97,93.35
+Te-me_0225.jpg,Meningioma,Meningioma,99.97,92.72
+Te-me_0226.jpg,Meningioma,Meningioma,99.99,97.02
+Te-me_0227.jpg,Meningioma,Meningioma,100.0,98.45
+Te-me_0228.jpg,Meningioma,Meningioma,100.0,98.22
+Te-me_0229.jpg,Meningioma,Meningioma,99.99,96.86
+Te-me_0230.jpg,Meningioma,Meningioma,99.99,95.77
+Te-me_0231.jpg,Meningioma,Meningioma,99.96,98.19
+Te-me_0232.jpg,Meningioma,Meningioma,100.0,96.94
+Te-me_0233.jpg,Meningioma,Meningioma,99.99,94.72
+Te-me_0234.jpg,Meningioma,Meningioma,100.0,98.76
+Te-me_0235.jpg,Meningioma,Meningioma,100.0,98.84
+Te-me_0236.jpg,Meningioma,Meningioma,99.91,95.13
+Te-me_0237.jpg,Meningioma,Meningioma,99.92,87.63
+Te-me_0238.jpg,Meningioma,Meningioma,100.0,98.77
+Te-me_0239.jpg,Meningioma,Meningioma,100.0,96.05
+Te-me_0240.jpg,Meningioma,Meningioma,100.0,98.28
+Te-me_0241.jpg,Meningioma,Meningioma,99.99,94.2
+Te-me_0242.jpg,Meningioma,Meningioma,100.0,98.41
+Te-me_0243.jpg,Meningioma,Meningioma,100.0,98.16
+Te-me_0244.jpg,Meningioma,Meningioma,100.0,97.17
+Te-me_0245.jpg,Meningioma,Meningioma,100.0,98.47
+Te-me_0246.jpg,Meningioma,Meningioma,100.0,93.79
+Te-me_0247.jpg,Meningioma,Meningioma,99.99,92.69
+Te-me_0248.jpg,Meningioma,Meningioma,99.88,92.57
+Te-me_0249.jpg,Meningioma,Meningioma,100.0,96.43
+Te-me_0250.jpg,Meningioma,Meningioma,100.0,98.14
+Te-me_0251.jpg,Meningioma,Meningioma,99.74,94.02
+Te-me_0252.jpg,Meningioma,Meningioma,100.0,97.25
+Te-me_0253.jpg,Meningioma,Meningioma,99.99,98.16
+Te-me_0254.jpg,Meningioma,Meningioma,99.99,93.25
+Te-me_0255.jpg,Meningioma,Meningioma,100.0,98.27
+Te-me_0256.jpg,Meningioma,Meningioma,100.0,98.67
+Te-me_0257.jpg,Meningioma,Meningioma,100.0,97.81
+Te-me_0258.jpg,Meningioma,Meningioma,100.0,99.44
+Te-me_0259.jpg,Meningioma,Meningioma,100.0,89.97
+Te-me_0260.jpg,Meningioma,Meningioma,100.0,94.82
+Te-me_0261.jpg,Meningioma,Meningioma,100.0,97.45
+Te-me_0262.jpg,Meningioma,Meningioma,100.0,98.83
+Te-me_0263.jpg,Meningioma,Meningioma,100.0,98.71
+Te-me_0264.jpg,Meningioma,Meningioma,100.0,94.5
+Te-me_0265.jpg,Meningioma,Meningioma,100.0,98.63
+Te-me_0266.jpg,Meningioma,Meningioma,99.66,94.15
+Te-me_0267.jpg,Meningioma,Meningioma,100.0,99.22
+Te-me_0268.jpg,Meningioma,Meningioma,100.0,98.0
+Te-me_0269.jpg,Meningioma,Meningioma,99.99,94.4
+Te-me_0270.jpg,Meningioma,Meningioma,100.0,90.94
+Te-me_0271.jpg,Meningioma,Meningioma,100.0,96.93
+Te-me_0272.jpg,Meningioma,Meningioma,100.0,98.43
+Te-me_0273.jpg,Meningioma,Meningioma,100.0,99.18
+Te-me_0274.jpg,Meningioma,Meningioma,100.0,99.27
+Te-me_0275.jpg,Meningioma,Meningioma,100.0,98.83
+Te-me_0276.jpg,Meningioma,Meningioma,99.99,98.73
+Te-me_0277.jpg,Meningioma,Meningioma,100.0,98.16
+Te-me_0278.jpg,Meningioma,Meningioma,100.0,97.42
+Te-me_0279.jpg,Meningioma,Meningioma,100.0,98.06
+Te-me_0280.jpg,Meningioma,Meningioma,97.26,85.04
+Te-me_0281.jpg,Meningioma,Meningioma,100.0,98.14
+Te-me_0282.jpg,Meningioma,Meningioma,100.0,99.43
+Te-me_0283.jpg,Meningioma,Meningioma,100.0,99.26
+Te-me_0284.jpg,Meningioma,Meningioma,100.0,98.19
+Te-me_0285.jpg,Meningioma,Meningioma,100.0,98.45
+Te-me_0286.jpg,Meningioma,Meningioma,99.59,84.74
+Te-me_0287.jpg,Meningioma,Meningioma,99.99,96.1
+Te-me_0288.jpg,Meningioma,Meningioma,100.0,98.63
+Te-me_0289.jpg,Meningioma,Meningioma,100.0,99.34
+Te-me_0290.jpg,Meningioma,Meningioma,99.92,97.23
+Te-me_0291.jpg,Meningioma,Meningioma,99.99,98.46
+Te-me_0292.jpg,Meningioma,Meningioma,99.97,96.05
+Te-me_0293.jpg,Meningioma,Meningioma,100.0,96.26
+Te-me_0294.jpg,Meningioma,Meningioma,99.99,96.29
+Te-me_0295.jpg,Meningioma,Meningioma,100.0,98.14
+Te-me_0296.jpg,Meningioma,Meningioma,99.99,97.53
+Te-me_0297.jpg,Meningioma,Meningioma,96.44,95.36
+Te-me_0298.jpg,Meningioma,Meningioma,100.0,98.51
+Te-me_0299.jpg,Meningioma,Meningioma,100.0,98.85
+Te-me_0300.jpg,Meningioma,Meningioma,100.0,97.28
+Te-me_0301.jpg,Meningioma,Meningioma,100.0,99.32
+Te-me_0302.jpg,Meningioma,Meningioma,100.0,97.13
+Te-me_0303.jpg,Meningioma,Meningioma,100.0,99.44
+Te-me_0304.jpg,Meningioma,Meningioma,99.99,89.65
+Te-me_0305.jpg,Meningioma,Meningioma,99.99,98.07
+Te-noTr_0000.jpg,No Tumor,No Tumor,99.89,100.0
+Te-noTr_0001.jpg,No Tumor,No Tumor,100.0,100.0
+Te-noTr_0002.jpg,No Tumor,No Tumor,100.0,100.0
+Te-noTr_0003.jpg,No Tumor,No Tumor,100.0,100.0
+Te-noTr_0004.jpg,No Tumor,No Tumor,99.99,100.0
+Te-noTr_0005.jpg,No Tumor,No Tumor,99.99,100.0
+Te-noTr_0006.jpg,No Tumor,No Tumor,100.0,100.0
+Te-noTr_0007.jpg,No Tumor,No Tumor,100.0,100.0
+Te-noTr_0008.jpg,No Tumor,No Tumor,100.0,100.0
+Te-noTr_0009.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0010.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0011.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0012.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0013.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0014.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0015.jpg,No Tumor,No Tumor,99.97,100.0
+Te-no_0016.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0017.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0018.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0019.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0020.jpg,No Tumor,No Tumor,99.36,100.0
+Te-no_0021.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0022.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0023.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0024.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0025.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0026.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0027.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0028.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0029.jpg,No Tumor,No Tumor,99.97,100.0
+Te-no_0030.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0031.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0032.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0033.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0034.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0035.jpg,No Tumor,No Tumor,99.61,100.0
+Te-no_0036.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0037.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0038.jpg,No Tumor,No Tumor,99.93,100.0
+Te-no_0039.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0040.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0041.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0042.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0043.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0044.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0045.jpg,No Tumor,No Tumor,99.94,100.0
+Te-no_0046.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0047.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0048.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0049.jpg,No Tumor,No Tumor,99.95,100.0
+Te-no_0050.jpg,No Tumor,No Tumor,99.94,100.0
+Te-no_0051.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0052.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0053.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0054.jpg,No Tumor,No Tumor,99.94,100.0
+Te-no_0055.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0056.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0057.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0058.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0059.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0060.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0061.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0062.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0063.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0064.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0065.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0066.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0067.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0068.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0069.jpg,No Tumor,No Tumor,99.97,100.0
+Te-no_0070.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0071.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0072.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0073.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0074.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0075.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0076.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0077.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0078.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0079.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0080.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0081.jpg,No Tumor,No Tumor,99.61,100.0
+Te-no_0082.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0083.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0084.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0085.jpg,No Tumor,No Tumor,99.97,100.0
+Te-no_0086.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0087.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0088.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0089.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0090.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0091.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0092.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0093.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0094.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0095.jpg,No Tumor,No Tumor,99.98,100.0
+Te-no_0096.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0097.jpg,No Tumor,No Tumor,99.99,100.0
+Te-no_0098.jpg,No Tumor,No Tumor,99.95,100.0
+Te-no_0099.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0100.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0101.jpg,No Tumor,No Tumor,98.21,100.0
+Te-no_0102.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0103.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0104.jpg,No Tumor,Glioma,73.1,100.0
+Te-no_0105.jpg,No Tumor,No Tumor,100.0,96.98
+Te-no_0106.jpg,No Tumor,No Tumor,100.0,99.01
+Te-no_0107.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0108.jpg,No Tumor,No Tumor,100.0,97.42
+Te-no_0109.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0110.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0111.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0112.jpg,No Tumor,No Tumor,100.0,99.56
+Te-no_0113.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0114.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0115.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0116.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0117.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0118.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0119.jpg,No Tumor,No Tumor,100.0,99.62
+Te-no_0120.jpg,No Tumor,No Tumor,100.0,99.88
+Te-no_0121.jpg,No Tumor,No Tumor,100.0,99.84
+Te-no_0122.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0123.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0124.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0125.jpg,No Tumor,No Tumor,100.0,99.21
+Te-no_0126.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0127.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0128.jpg,No Tumor,No Tumor,100.0,98.22
+Te-no_0129.jpg,No Tumor,No Tumor,100.0,99.46
+Te-no_0130.jpg,No Tumor,No Tumor,100.0,99.88
+Te-no_0131.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0132.jpg,No Tumor,No Tumor,100.0,99.99
+Te-no_0133.jpg,No Tumor,No Tumor,100.0,99.29
+Te-no_0134.jpg,No Tumor,No Tumor,100.0,99.65
+Te-no_0135.jpg,No Tumor,No Tumor,100.0,99.53
+Te-no_0136.jpg,No Tumor,No Tumor,100.0,99.66
+Te-no_0137.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0138.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0139.jpg,No Tumor,No Tumor,100.0,99.74
+Te-no_0140.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0141.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0142.jpg,No Tumor,No Tumor,100.0,99.77
+Te-no_0143.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0144.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0145.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0146.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0147.jpg,No Tumor,No Tumor,100.0,99.78
+Te-no_0148.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0149.jpg,No Tumor,No Tumor,100.0,99.25
+Te-no_0150.jpg,No Tumor,No Tumor,100.0,97.27
+Te-no_0151.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0152.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0153.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0154.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0155.jpg,No Tumor,No Tumor,100.0,99.14
+Te-no_0156.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0157.jpg,No Tumor,No Tumor,100.0,99.69
+Te-no_0158.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0159.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0160.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0161.jpg,No Tumor,No Tumor,100.0,99.72
+Te-no_0162.jpg,No Tumor,No Tumor,100.0,99.75
+Te-no_0163.jpg,No Tumor,No Tumor,100.0,99.8
+Te-no_0164.jpg,No Tumor,No Tumor,100.0,99.47
+Te-no_0165.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0166.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0167.jpg,No Tumor,No Tumor,100.0,99.84
+Te-no_0168.jpg,No Tumor,No Tumor,100.0,99.53
+Te-no_0169.jpg,No Tumor,No Tumor,100.0,99.88
+Te-no_0170.jpg,No Tumor,No Tumor,100.0,99.48
+Te-no_0171.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0172.jpg,No Tumor,No Tumor,100.0,99.84
+Te-no_0173.jpg,No Tumor,No Tumor,100.0,99.76
+Te-no_0174.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0175.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0176.jpg,No Tumor,No Tumor,100.0,99.34
+Te-no_0177.jpg,No Tumor,No Tumor,99.96,96.56
+Te-no_0178.jpg,No Tumor,No Tumor,100.0,97.68
+Te-no_0179.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0180.jpg,No Tumor,No Tumor,100.0,97.79
+Te-no_0181.jpg,No Tumor,No Tumor,100.0,97.81
+Te-no_0182.jpg,No Tumor,No Tumor,100.0,98.55
+Te-no_0183.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0184.jpg,No Tumor,No Tumor,100.0,98.71
+Te-no_0185.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0186.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0187.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0188.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0189.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0190.jpg,No Tumor,No Tumor,100.0,99.8
+Te-no_0191.jpg,No Tumor,No Tumor,100.0,99.64
+Te-no_0192.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0193.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0194.jpg,No Tumor,No Tumor,100.0,99.78
+Te-no_0195.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0196.jpg,No Tumor,No Tumor,100.0,99.15
+Te-no_0197.jpg,No Tumor,No Tumor,100.0,99.74
+Te-no_0198.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0199.jpg,No Tumor,No Tumor,100.0,99.66
+Te-no_0200.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0201.jpg,No Tumor,No Tumor,100.0,99.78
+Te-no_0202.jpg,No Tumor,No Tumor,100.0,99.21
+Te-no_0203.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0204.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0205.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0206.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0207.jpg,No Tumor,No Tumor,100.0,99.31
+Te-no_0208.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0209.jpg,No Tumor,No Tumor,100.0,99.72
+Te-no_0210.jpg,No Tumor,No Tumor,100.0,99.8
+Te-no_0211.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0212.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0213.jpg,No Tumor,No Tumor,100.0,99.78
+Te-no_0214.jpg,No Tumor,No Tumor,100.0,99.45
+Te-no_0215.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0216.jpg,No Tumor,No Tumor,100.0,99.82
+Te-no_0217.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0218.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0219.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0220.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0221.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0222.jpg,No Tumor,No Tumor,100.0,99.33
+Te-no_0223.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0224.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0225.jpg,No Tumor,No Tumor,100.0,99.99
+Te-no_0226.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0227.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0228.jpg,No Tumor,No Tumor,99.73,99.61
+Te-no_0229.jpg,No Tumor,No Tumor,100.0,98.5
+Te-no_0230.jpg,No Tumor,No Tumor,100.0,99.81
+Te-no_0231.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0232.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0233.jpg,No Tumor,No Tumor,100.0,99.82
+Te-no_0234.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0235.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0236.jpg,No Tumor,No Tumor,100.0,99.62
+Te-no_0237.jpg,No Tumor,No Tumor,100.0,99.81
+Te-no_0238.jpg,No Tumor,No Tumor,100.0,99.67
+Te-no_0239.jpg,No Tumor,No Tumor,100.0,99.36
+Te-no_0240.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0241.jpg,No Tumor,No Tumor,100.0,99.41
+Te-no_0242.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0243.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0244.jpg,No Tumor,No Tumor,100.0,99.37
+Te-no_0245.jpg,No Tumor,No Tumor,100.0,99.57
+Te-no_0246.jpg,No Tumor,No Tumor,100.0,99.61
+Te-no_0247.jpg,No Tumor,No Tumor,100.0,99.07
+Te-no_0248.jpg,No Tumor,No Tumor,100.0,99.76
+Te-no_0249.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0250.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0251.jpg,No Tumor,No Tumor,100.0,99.78
+Te-no_0252.jpg,No Tumor,No Tumor,100.0,99.77
+Te-no_0253.jpg,No Tumor,No Tumor,100.0,99.68
+Te-no_0254.jpg,No Tumor,No Tumor,100.0,99.72
+Te-no_0255.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0256.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0257.jpg,No Tumor,No Tumor,100.0,99.57
+Te-no_0258.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0259.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0260.jpg,No Tumor,No Tumor,100.0,99.22
+Te-no_0261.jpg,No Tumor,No Tumor,100.0,99.89
+Te-no_0262.jpg,No Tumor,No Tumor,99.87,96.04
+Te-no_0263.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0264.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0265.jpg,No Tumor,No Tumor,100.0,99.69
+Te-no_0266.jpg,No Tumor,No Tumor,100.0,98.38
+Te-no_0267.jpg,No Tumor,No Tumor,100.0,99.73
+Te-no_0268.jpg,No Tumor,No Tumor,100.0,98.06
+Te-no_0269.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0270.jpg,No Tumor,No Tumor,100.0,99.7
+Te-no_0271.jpg,No Tumor,No Tumor,100.0,97.69
+Te-no_0272.jpg,No Tumor,No Tumor,100.0,99.83
+Te-no_0273.jpg,No Tumor,No Tumor,100.0,99.56
+Te-no_0274.jpg,No Tumor,No Tumor,100.0,99.63
+Te-no_0275.jpg,No Tumor,No Tumor,100.0,99.39
+Te-no_0276.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0277.jpg,No Tumor,No Tumor,100.0,99.8
+Te-no_0278.jpg,No Tumor,No Tumor,100.0,98.33
+Te-no_0279.jpg,No Tumor,No Tumor,100.0,99.65
+Te-no_0280.jpg,No Tumor,No Tumor,100.0,97.84
+Te-no_0281.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0282.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0283.jpg,No Tumor,No Tumor,100.0,99.48
+Te-no_0284.jpg,No Tumor,No Tumor,100.0,99.71
+Te-no_0285.jpg,No Tumor,No Tumor,100.0,99.58
+Te-no_0286.jpg,No Tumor,No Tumor,100.0,99.46
+Te-no_0287.jpg,No Tumor,No Tumor,99.91,96.12
+Te-no_0288.jpg,No Tumor,No Tumor,100.0,97.96
+Te-no_0289.jpg,No Tumor,No Tumor,100.0,99.72
+Te-no_0290.jpg,No Tumor,No Tumor,100.0,99.99
+Te-no_0291.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0292.jpg,No Tumor,No Tumor,100.0,97.64
+Te-no_0293.jpg,No Tumor,No Tumor,100.0,99.8
+Te-no_0294.jpg,No Tumor,No Tumor,100.0,99.81
+Te-no_0295.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0296.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0297.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0298.jpg,No Tumor,No Tumor,100.0,99.3
+Te-no_0299.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0300.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0301.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0302.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0303.jpg,No Tumor,No Tumor,100.0,99.99
+Te-no_0304.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0305.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0306.jpg,No Tumor,No Tumor,100.0,99.76
+Te-no_0307.jpg,No Tumor,No Tumor,100.0,99.83
+Te-no_0308.jpg,No Tumor,No Tumor,100.0,99.84
+Te-no_0309.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0310.jpg,No Tumor,No Tumor,100.0,99.71
+Te-no_0311.jpg,No Tumor,No Tumor,100.0,99.68
+Te-no_0312.jpg,No Tumor,No Tumor,100.0,98.9
+Te-no_0313.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0314.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0315.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0316.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0317.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0318.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0319.jpg,No Tumor,No Tumor,100.0,99.71
+Te-no_0320.jpg,No Tumor,No Tumor,100.0,99.21
+Te-no_0321.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0322.jpg,No Tumor,No Tumor,100.0,99.99
+Te-no_0323.jpg,No Tumor,No Tumor,100.0,98.35
+Te-no_0324.jpg,No Tumor,No Tumor,100.0,99.39
+Te-no_0325.jpg,No Tumor,No Tumor,100.0,99.55
+Te-no_0326.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0327.jpg,No Tumor,No Tumor,100.0,99.63
+Te-no_0328.jpg,No Tumor,No Tumor,100.0,99.31
+Te-no_0329.jpg,No Tumor,No Tumor,100.0,99.72
+Te-no_0330.jpg,No Tumor,No Tumor,100.0,99.78
+Te-no_0331.jpg,No Tumor,No Tumor,100.0,99.36
+Te-no_0332.jpg,No Tumor,No Tumor,100.0,98.95
+Te-no_0333.jpg,No Tumor,No Tumor,99.99,99.94
+Te-no_0334.jpg,No Tumor,No Tumor,100.0,99.44
+Te-no_0335.jpg,No Tumor,No Tumor,100.0,99.83
+Te-no_0336.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0337.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0338.jpg,No Tumor,No Tumor,100.0,99.91
+Te-no_0339.jpg,No Tumor,No Tumor,100.0,99.68
+Te-no_0340.jpg,No Tumor,No Tumor,100.0,99.74
+Te-no_0341.jpg,No Tumor,No Tumor,100.0,99.73
+Te-no_0342.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0343.jpg,No Tumor,No Tumor,100.0,99.0
+Te-no_0344.jpg,No Tumor,No Tumor,98.15,96.81
+Te-no_0345.jpg,No Tumor,No Tumor,100.0,99.88
+Te-no_0346.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0347.jpg,No Tumor,No Tumor,100.0,99.26
+Te-no_0348.jpg,No Tumor,No Tumor,100.0,99.64
+Te-no_0349.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0350.jpg,No Tumor,No Tumor,99.46,96.49
+Te-no_0351.jpg,No Tumor,No Tumor,100.0,99.38
+Te-no_0352.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0353.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0354.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0355.jpg,No Tumor,No Tumor,100.0,99.35
+Te-no_0356.jpg,No Tumor,No Tumor,100.0,99.88
+Te-no_0357.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0358.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0359.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0360.jpg,No Tumor,No Tumor,100.0,99.62
+Te-no_0361.jpg,No Tumor,No Tumor,100.0,99.82
+Te-no_0362.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0363.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0364.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0365.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0366.jpg,No Tumor,No Tumor,100.0,99.96
+Te-no_0367.jpg,No Tumor,No Tumor,100.0,99.81
+Te-no_0368.jpg,No Tumor,No Tumor,100.0,99.83
+Te-no_0369.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0370.jpg,No Tumor,No Tumor,100.0,100.0
+Te-no_0371.jpg,No Tumor,No Tumor,100.0,99.92
+Te-no_0372.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0373.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0374.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0375.jpg,No Tumor,No Tumor,100.0,99.77
+Te-no_0376.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0377.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0378.jpg,No Tumor,No Tumor,100.0,99.75
+Te-no_0379.jpg,No Tumor,No Tumor,100.0,96.69
+Te-no_0380.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0381.jpg,No Tumor,No Tumor,100.0,99.98
+Te-no_0382.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0383.jpg,No Tumor,No Tumor,100.0,99.79
+Te-no_0384.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0385.jpg,No Tumor,No Tumor,100.0,99.9
+Te-no_0386.jpg,No Tumor,No Tumor,100.0,99.59
+Te-no_0387.jpg,No Tumor,No Tumor,100.0,99.81
+Te-no_0388.jpg,No Tumor,No Tumor,100.0,99.87
+Te-no_0389.jpg,No Tumor,No Tumor,100.0,99.25
+Te-no_0390.jpg,No Tumor,No Tumor,100.0,99.94
+Te-no_0391.jpg,No Tumor,No Tumor,100.0,99.85
+Te-no_0392.jpg,No Tumor,No Tumor,100.0,99.01
+Te-no_0393.jpg,No Tumor,No Tumor,100.0,98.77
+Te-no_0394.jpg,No Tumor,No Tumor,100.0,99.59
+Te-no_0395.jpg,No Tumor,No Tumor,100.0,99.95
+Te-no_0396.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0397.jpg,No Tumor,No Tumor,100.0,99.97
+Te-no_0398.jpg,No Tumor,No Tumor,100.0,99.63
+Te-no_0399.jpg,No Tumor,No Tumor,100.0,99.28
+Te-no_0400.jpg,No Tumor,No Tumor,100.0,99.93
+Te-no_0401.jpg,No Tumor,No Tumor,100.0,99.8
+Te-no_0402.jpg,No Tumor,No Tumor,100.0,99.86
+Te-no_0403.jpg,No Tumor,No Tumor,100.0,99.65
+Te-no_0404.jpg,No Tumor,No Tumor,100.0,99.42
+Te-piTr_0000.jpg,Pituitary,Pituitary,100.0,96.95
+Te-piTr_0001.jpg,Pituitary,Pituitary,100.0,100.0
+Te-piTr_0002.jpg,Pituitary,Meningioma,92.79,90.89
+Te-piTr_0003.jpg,Pituitary,Pituitary,100.0,96.99
+Te-piTr_0004.jpg,Pituitary,Pituitary,100.0,97.04
+Te-piTr_0005.jpg,Pituitary,Pituitary,99.98,95.69
+Te-piTr_0006.jpg,Pituitary,Pituitary,99.99,91.75
+Te-piTr_0007.jpg,Pituitary,Pituitary,100.0,93.65
+Te-piTr_0008.jpg,Pituitary,Pituitary,99.99,94.61
+Te-piTr_0009.jpg,Pituitary,Pituitary,99.99,97.73
+Te-pi_0010.jpg,Pituitary,Pituitary,100.0,98.63
+Te-pi_0011.jpg,Pituitary,Pituitary,100.0,98.83
+Te-pi_0012.jpg,Pituitary,Pituitary,99.99,94.53
+Te-pi_0013.jpg,Pituitary,Pituitary,100.0,96.88
+Te-pi_0014.jpg,Pituitary,Pituitary,100.0,98.08
+Te-pi_0015.jpg,Pituitary,Pituitary,100.0,98.25
+Te-pi_0016.jpg,Pituitary,Pituitary,99.99,97.88
+Te-pi_0017.jpg,Pituitary,Pituitary,99.99,87.77
+Te-pi_0018.jpg,Pituitary,Pituitary,99.98,91.41
+Te-pi_0019.jpg,Pituitary,Pituitary,100.0,96.46
+Te-pi_0020.jpg,Pituitary,Pituitary,100.0,97.65
+Te-pi_0021.jpg,Pituitary,Pituitary,100.0,97.93
+Te-pi_0022.jpg,Pituitary,Pituitary,99.99,97.42
+Te-pi_0023.jpg,Pituitary,Pituitary,99.99,97.97
+Te-pi_0024.jpg,Pituitary,Pituitary,99.99,89.52
+Te-pi_0025.jpg,Pituitary,Pituitary,99.99,95.11
+Te-pi_0026.jpg,Pituitary,Pituitary,99.99,98.86
+Te-pi_0027.jpg,Pituitary,Pituitary,100.0,98.63
+Te-pi_0028.jpg,Pituitary,Pituitary,100.0,98.59
+Te-pi_0029.jpg,Pituitary,Pituitary,99.87,92.66
+Te-pi_0030.jpg,Pituitary,Pituitary,99.99,97.95
+Te-pi_0031.jpg,Pituitary,Pituitary,99.99,94.16
+Te-pi_0032.jpg,Pituitary,Pituitary,99.99,93.96
+Te-pi_0033.jpg,Pituitary,Pituitary,100.0,92.76
+Te-pi_0034.jpg,Pituitary,Pituitary,100.0,92.27
+Te-pi_0035.jpg,Pituitary,Pituitary,100.0,98.76
+Te-pi_0036.jpg,Pituitary,Pituitary,99.99,96.1
+Te-pi_0037.jpg,Pituitary,Pituitary,100.0,96.43
+Te-pi_0038.jpg,Pituitary,Pituitary,100.0,94.42
+Te-pi_0039.jpg,Pituitary,Pituitary,99.99,91.93
+Te-pi_0040.jpg,Pituitary,Pituitary,100.0,92.2
+Te-pi_0041.jpg,Pituitary,Pituitary,99.99,99.09
+Te-pi_0042.jpg,Pituitary,Pituitary,99.99,99.13
+Te-pi_0043.jpg,Pituitary,Pituitary,99.99,96.99
+Te-pi_0044.jpg,Pituitary,Pituitary,100.0,100.0
+Te-pi_0045.jpg,Pituitary,Pituitary,100.0,100.0
+Te-pi_0046.jpg,Pituitary,Pituitary,100.0,98.79
+Te-pi_0047.jpg,Pituitary,Pituitary,100.0,99.24
+Te-pi_0048.jpg,Pituitary,Pituitary,100.0,98.39
+Te-pi_0049.jpg,Pituitary,Pituitary,100.0,97.65
+Te-pi_0050.jpg,Pituitary,Pituitary,100.0,95.75
+Te-pi_0051.jpg,Pituitary,Pituitary,100.0,97.48
+Te-pi_0052.jpg,Pituitary,Pituitary,100.0,97.33
+Te-pi_0053.jpg,Pituitary,Pituitary,100.0,93.55
+Te-pi_0054.jpg,Pituitary,Pituitary,100.0,97.77
+Te-pi_0055.jpg,Pituitary,Pituitary,100.0,100.0
+Te-pi_0056.jpg,Pituitary,Pituitary,99.99,98.61
+Te-pi_0057.jpg,Pituitary,Pituitary,99.99,98.79
+Te-pi_0058.jpg,Pituitary,Pituitary,100.0,95.59
+Te-pi_0059.jpg,Pituitary,Pituitary,100.0,91.71
+Te-pi_0060.jpg,Pituitary,Pituitary,100.0,93.51
+Te-pi_0061.jpg,Pituitary,Pituitary,100.0,96.44
+Te-pi_0062.jpg,Pituitary,Pituitary,100.0,96.33
+Te-pi_0063.jpg,Pituitary,Pituitary,100.0,98.12
+Te-pi_0064.jpg,Pituitary,Pituitary,100.0,98.32
+Te-pi_0065.jpg,Pituitary,Pituitary,100.0,97.32
+Te-pi_0066.jpg,Pituitary,Pituitary,100.0,100.0
+Te-pi_0067.jpg,Pituitary,Pituitary,99.99,97.94
+Te-pi_0068.jpg,Pituitary,Pituitary,99.96,88.45
+Te-pi_0069.jpg,Pituitary,Pituitary,99.99,97.56
+Te-pi_0070.jpg,Pituitary,Pituitary,100.0,98.9
+Te-pi_0071.jpg,Pituitary,Pituitary,99.99,97.04
+Te-pi_0072.jpg,Pituitary,Pituitary,100.0,98.7
+Te-pi_0073.jpg,Pituitary,Pituitary,100.0,97.05
+Te-pi_0074.jpg,Pituitary,Pituitary,100.0,98.95
+Te-pi_0075.jpg,Pituitary,Pituitary,99.99,95.61
+Te-pi_0076.jpg,Pituitary,Pituitary,100.0,98.07
+Te-pi_0077.jpg,Pituitary,Pituitary,100.0,98.78
+Te-pi_0078.jpg,Pituitary,Pituitary,99.05,93.03
+Te-pi_0079.jpg,Pituitary,Pituitary,99.99,97.94
+Te-pi_0080.jpg,Pituitary,Pituitary,100.0,98.2
+Te-pi_0081.jpg,Pituitary,Pituitary,100.0,98.55
+Te-pi_0082.jpg,Pituitary,Pituitary,100.0,98.31
+Te-pi_0083.jpg,Pituitary,Pituitary,100.0,98.47
+Te-pi_0084.jpg,Pituitary,Pituitary,100.0,98.43
+Te-pi_0085.jpg,Pituitary,Pituitary,100.0,97.64
+Te-pi_0086.jpg,Pituitary,Pituitary,100.0,98.69
+Te-pi_0087.jpg,Pituitary,Pituitary,100.0,97.24
+Te-pi_0088.jpg,Pituitary,Pituitary,100.0,97.7
+Te-pi_0089.jpg,Pituitary,Pituitary,100.0,97.85
+Te-pi_0090.jpg,Pituitary,Pituitary,99.99,98.62
+Te-pi_0091.jpg,Pituitary,Pituitary,100.0,98.25
+Te-pi_0092.jpg,Pituitary,Pituitary,100.0,95.98
+Te-pi_0093.jpg,Pituitary,Pituitary,99.99,97.15
+Te-pi_0094.jpg,Pituitary,Pituitary,100.0,98.39
+Te-pi_0095.jpg,Pituitary,Pituitary,100.0,93.97
+Te-pi_0096.jpg,Pituitary,Pituitary,100.0,96.43
+Te-pi_0097.jpg,Pituitary,Pituitary,100.0,94.9
+Te-pi_0098.jpg,Pituitary,Pituitary,99.99,94.15
+Te-pi_0099.jpg,Pituitary,Pituitary,100.0,96.26
+Te-pi_0100.jpg,Pituitary,Pituitary,100.0,97.91
+Te-pi_0101.jpg,Pituitary,Pituitary,100.0,97.24
+Te-pi_0102.jpg,Pituitary,Pituitary,100.0,95.3
+Te-pi_0103.jpg,Pituitary,Pituitary,99.98,92.06
+Te-pi_0104.jpg,Pituitary,Pituitary,100.0,95.89
+Te-pi_0105.jpg,Pituitary,Pituitary,100.0,96.28
+Te-pi_0106.jpg,Pituitary,Pituitary,100.0,96.36
+Te-pi_0107.jpg,Pituitary,Pituitary,100.0,98.37
+Te-pi_0108.jpg,Pituitary,Pituitary,100.0,96.85
+Te-pi_0109.jpg,Pituitary,Pituitary,100.0,94.95
+Te-pi_0110.jpg,Pituitary,Pituitary,100.0,96.06
+Te-pi_0111.jpg,Pituitary,Pituitary,100.0,96.7
+Te-pi_0112.jpg,Pituitary,Pituitary,99.99,98.14
+Te-pi_0113.jpg,Pituitary,Pituitary,99.95,93.54
+Te-pi_0114.jpg,Pituitary,Pituitary,99.99,93.14
+Te-pi_0115.jpg,Pituitary,Pituitary,100.0,97.37
+Te-pi_0116.jpg,Pituitary,Pituitary,100.0,96.77
+Te-pi_0117.jpg,Pituitary,Pituitary,100.0,98.02
+Te-pi_0118.jpg,Pituitary,Pituitary,100.0,97.3
+Te-pi_0119.jpg,Pituitary,Pituitary,99.99,95.68
+Te-pi_0120.jpg,Pituitary,Pituitary,99.99,98.75
+Te-pi_0121.jpg,Pituitary,Pituitary,100.0,98.88
+Te-pi_0122.jpg,Pituitary,Pituitary,100.0,95.03
+Te-pi_0123.jpg,Pituitary,Pituitary,100.0,92.23
+Te-pi_0124.jpg,Pituitary,Pituitary,99.99,98.31
+Te-pi_0125.jpg,Pituitary,Pituitary,100.0,93.34
+Te-pi_0126.jpg,Pituitary,Pituitary,100.0,94.6
+Te-pi_0127.jpg,Pituitary,Pituitary,100.0,96.58
+Te-pi_0128.jpg,Pituitary,Pituitary,99.99,96.65
+Te-pi_0129.jpg,Pituitary,Pituitary,100.0,98.43
+Te-pi_0130.jpg,Pituitary,Pituitary,99.99,98.02
+Te-pi_0131.jpg,Pituitary,Pituitary,100.0,98.4
+Te-pi_0132.jpg,Pituitary,Pituitary,100.0,98.2
+Te-pi_0133.jpg,Pituitary,Pituitary,99.99,94.9
+Te-pi_0134.jpg,Pituitary,Pituitary,100.0,98.31
+Te-pi_0135.jpg,Pituitary,Pituitary,100.0,98.5
+Te-pi_0136.jpg,Pituitary,Pituitary,100.0,98.09
+Te-pi_0137.jpg,Pituitary,Pituitary,100.0,92.66
+Te-pi_0138.jpg,Pituitary,Pituitary,99.99,98.1
+Te-pi_0139.jpg,Pituitary,Pituitary,100.0,97.72
+Te-pi_0140.jpg,Pituitary,Pituitary,99.99,97.76
+Te-pi_0141.jpg,Pituitary,Pituitary,100.0,98.11
+Te-pi_0142.jpg,Pituitary,Pituitary,99.99,94.27
+Te-pi_0143.jpg,Pituitary,Pituitary,99.99,92.73
+Te-pi_0144.jpg,Pituitary,Pituitary,100.0,98.9
+Te-pi_0145.jpg,Pituitary,Pituitary,100.0,98.49
+Te-pi_0146.jpg,Pituitary,Pituitary,100.0,98.02
+Te-pi_0147.jpg,Pituitary,Pituitary,99.98,96.21
+Te-pi_0148.jpg,Pituitary,Pituitary,99.97,96.91
+Te-pi_0149.jpg,Pituitary,Pituitary,99.97,92.77
+Te-pi_0150.jpg,Pituitary,Pituitary,100.0,97.53
+Te-pi_0151.jpg,Pituitary,Pituitary,100.0,98.38
+Te-pi_0152.jpg,Pituitary,Pituitary,99.98,98.14
+Te-pi_0153.jpg,Pituitary,Pituitary,99.93,79.26
+Te-pi_0154.jpg,Pituitary,Pituitary,99.98,91.87
+Te-pi_0155.jpg,Pituitary,Pituitary,100.0,98.88
+Te-pi_0156.jpg,Pituitary,Pituitary,99.98,96.7
+Te-pi_0157.jpg,Pituitary,Pituitary,100.0,98.63
+Te-pi_0158.jpg,Pituitary,Pituitary,99.99,98.49
+Te-pi_0159.jpg,Pituitary,Pituitary,99.99,93.97
+Te-pi_0160.jpg,Pituitary,Pituitary,99.99,98.32
+Te-pi_0161.jpg,Pituitary,Pituitary,100.0,98.25
+Te-pi_0162.jpg,Pituitary,Pituitary,99.99,96.94
+Te-pi_0163.jpg,Pituitary,Pituitary,99.99,90.08
+Te-pi_0164.jpg,Pituitary,Pituitary,99.99,95.35
+Te-pi_0165.jpg,Pituitary,Pituitary,100.0,98.32
+Te-pi_0166.jpg,Pituitary,Pituitary,99.99,98.91
+Te-pi_0167.jpg,Pituitary,Pituitary,100.0,97.07
+Te-pi_0168.jpg,Pituitary,Pituitary,100.0,95.38
+Te-pi_0169.jpg,Pituitary,Pituitary,100.0,98.86
+Te-pi_0170.jpg,Pituitary,Pituitary,99.97,97.21
+Te-pi_0171.jpg,Pituitary,Pituitary,99.97,95.86
+Te-pi_0172.jpg,Pituitary,Pituitary,99.99,94.04
+Te-pi_0173.jpg,Pituitary,Pituitary,99.99,98.36
+Te-pi_0174.jpg,Pituitary,Pituitary,100.0,94.03
+Te-pi_0175.jpg,Pituitary,Pituitary,99.99,93.53
+Te-pi_0176.jpg,Pituitary,Pituitary,100.0,94.11
+Te-pi_0177.jpg,Pituitary,Pituitary,100.0,91.84
+Te-pi_0178.jpg,Pituitary,Pituitary,100.0,96.44
+Te-pi_0179.jpg,Pituitary,Pituitary,99.97,96.31
+Te-pi_0180.jpg,Pituitary,Pituitary,99.99,89.6
+Te-pi_0181.jpg,Pituitary,Pituitary,100.0,96.46
+Te-pi_0182.jpg,Pituitary,Pituitary,100.0,96.01
+Te-pi_0183.jpg,Pituitary,Pituitary,100.0,92.01
+Te-pi_0184.jpg,Pituitary,Pituitary,99.99,91.46
+Te-pi_0185.jpg,Pituitary,Pituitary,99.99,97.83
+Te-pi_0186.jpg,Pituitary,Pituitary,99.99,92.51
+Te-pi_0187.jpg,Pituitary,Pituitary,100.0,98.49
+Te-pi_0188.jpg,Pituitary,Pituitary,98.13,63.91
+Te-pi_0189.jpg,Pituitary,Pituitary,100.0,98.49
+Te-pi_0190.jpg,Pituitary,Pituitary,100.0,96.66
+Te-pi_0191.jpg,Pituitary,Pituitary,100.0,98.69
+Te-pi_0192.jpg,Pituitary,Pituitary,100.0,97.14
+Te-pi_0193.jpg,Pituitary,Pituitary,99.99,98.24
+Te-pi_0194.jpg,Pituitary,Pituitary,100.0,99.24
+Te-pi_0195.jpg,Pituitary,Pituitary,100.0,98.8
+Te-pi_0196.jpg,Pituitary,Pituitary,99.99,94.93
+Te-pi_0197.jpg,Pituitary,Pituitary,100.0,98.33
+Te-pi_0198.jpg,Pituitary,Pituitary,100.0,98.21
+Te-pi_0199.jpg,Pituitary,Pituitary,100.0,95.86
+Te-pi_0200.jpg,Pituitary,Pituitary,100.0,96.52
+Te-pi_0201.jpg,Pituitary,Pituitary,99.99,97.82
+Te-pi_0202.jpg,Pituitary,Pituitary,99.99,98.46
+Te-pi_0203.jpg,Pituitary,Pituitary,100.0,98.95
+Te-pi_0204.jpg,Pituitary,Pituitary,100.0,98.72
+Te-pi_0205.jpg,Pituitary,Pituitary,100.0,98.74
+Te-pi_0206.jpg,Pituitary,Pituitary,99.99,97.26
+Te-pi_0207.jpg,Pituitary,Pituitary,99.99,98.34
+Te-pi_0208.jpg,Pituitary,Pituitary,100.0,98.88
+Te-pi_0209.jpg,Pituitary,Pituitary,100.0,97.82
+Te-pi_0210.jpg,Pituitary,Pituitary,100.0,94.9
+Te-pi_0211.jpg,Pituitary,Pituitary,99.99,97.89
+Te-pi_0212.jpg,Pituitary,Pituitary,99.93,93.31
+Te-pi_0213.jpg,Pituitary,Pituitary,100.0,98.0
+Te-pi_0214.jpg,Pituitary,Pituitary,100.0,97.27
+Te-pi_0215.jpg,Pituitary,Pituitary,99.99,97.83
+Te-pi_0216.jpg,Pituitary,Pituitary,99.99,97.07
+Te-pi_0217.jpg,Pituitary,Pituitary,99.98,95.1
+Te-pi_0218.jpg,Pituitary,Pituitary,100.0,98.78
+Te-pi_0219.jpg,Pituitary,Pituitary,100.0,98.34
+Te-pi_0220.jpg,Pituitary,Pituitary,100.0,95.49
+Te-pi_0221.jpg,Pituitary,Pituitary,100.0,98.83
+Te-pi_0222.jpg,Pituitary,Pituitary,99.93,97.4
+Te-pi_0223.jpg,Pituitary,Pituitary,100.0,97.95
+Te-pi_0224.jpg,Pituitary,Pituitary,99.99,90.04
+Te-pi_0225.jpg,Pituitary,Pituitary,100.0,98.82
+Te-pi_0226.jpg,Pituitary,Pituitary,99.99,95.35
+Te-pi_0227.jpg,Pituitary,Pituitary,100.0,98.33
+Te-pi_0228.jpg,Pituitary,Pituitary,100.0,97.4
+Te-pi_0229.jpg,Pituitary,Pituitary,100.0,96.82
+Te-pi_0230.jpg,Pituitary,Pituitary,100.0,98.41
+Te-pi_0231.jpg,Pituitary,Pituitary,100.0,98.81
+Te-pi_0232.jpg,Pituitary,Pituitary,99.98,99.08
+Te-pi_0233.jpg,Pituitary,Pituitary,100.0,94.01
+Te-pi_0234.jpg,Pituitary,Pituitary,100.0,95.68
+Te-pi_0235.jpg,Pituitary,Pituitary,100.0,98.92
+Te-pi_0236.jpg,Pituitary,Pituitary,99.98,97.39
+Te-pi_0237.jpg,Pituitary,Pituitary,99.99,97.69
+Te-pi_0238.jpg,Pituitary,Pituitary,99.99,97.85
+Te-pi_0239.jpg,Pituitary,Pituitary,100.0,98.12
+Te-pi_0240.jpg,Pituitary,Pituitary,100.0,98.41
+Te-pi_0241.jpg,Pituitary,Pituitary,99.99,97.95
+Te-pi_0242.jpg,Pituitary,Pituitary,100.0,99.41
+Te-pi_0243.jpg,Pituitary,Pituitary,100.0,97.2
+Te-pi_0244.jpg,Pituitary,Pituitary,100.0,98.22
+Te-pi_0245.jpg,Pituitary,Pituitary,100.0,98.74
+Te-pi_0246.jpg,Pituitary,Pituitary,100.0,96.27
+Te-pi_0247.jpg,Pituitary,Pituitary,100.0,94.89
+Te-pi_0248.jpg,Pituitary,Pituitary,99.98,89.97
+Te-pi_0249.jpg,Pituitary,Pituitary,100.0,98.73
+Te-pi_0250.jpg,Pituitary,Pituitary,100.0,95.93
+Te-pi_0251.jpg,Pituitary,Pituitary,99.98,90.06
+Te-pi_0252.jpg,Pituitary,Pituitary,99.99,97.52
+Te-pi_0253.jpg,Pituitary,Pituitary,100.0,97.14
+Te-pi_0254.jpg,Pituitary,Pituitary,100.0,95.21
+Te-pi_0255.jpg,Pituitary,Pituitary,100.0,97.79
+Te-pi_0256.jpg,Pituitary,Pituitary,100.0,97.47
+Te-pi_0257.jpg,Pituitary,Pituitary,100.0,97.53
+Te-pi_0258.jpg,Pituitary,Pituitary,100.0,97.8
+Te-pi_0259.jpg,Pituitary,Pituitary,99.99,91.07
+Te-pi_0260.jpg,Pituitary,Pituitary,100.0,95.95
+Te-pi_0261.jpg,Pituitary,Pituitary,100.0,97.27
+Te-pi_0262.jpg,Pituitary,Pituitary,100.0,96.41
+Te-pi_0263.jpg,Pituitary,Pituitary,100.0,97.39
+Te-pi_0264.jpg,Pituitary,Pituitary,99.97,93.93
+Te-pi_0265.jpg,Pituitary,Pituitary,100.0,97.97
+Te-pi_0266.jpg,Pituitary,Pituitary,100.0,95.28
+Te-pi_0267.jpg,Pituitary,Pituitary,100.0,92.41
+Te-pi_0268.jpg,Pituitary,Pituitary,100.0,97.01
+Te-pi_0269.jpg,Pituitary,Meningioma,55.02,56.78
+Te-pi_0270.jpg,Pituitary,Pituitary,100.0,97.94
+Te-pi_0271.jpg,Pituitary,Pituitary,100.0,95.44
+Te-pi_0272.jpg,Pituitary,Pituitary,100.0,96.93
+Te-pi_0273.jpg,Pituitary,Pituitary,100.0,99.05
+Te-pi_0274.jpg,Pituitary,Pituitary,100.0,96.21
+Te-pi_0275.jpg,Pituitary,Pituitary,100.0,95.38
+Te-pi_0276.jpg,Pituitary,Pituitary,100.0,95.39
+Te-pi_0277.jpg,Pituitary,Pituitary,100.0,97.45
+Te-pi_0278.jpg,Pituitary,Pituitary,100.0,96.3
+Te-pi_0279.jpg,Pituitary,Pituitary,99.99,97.34
+Te-pi_0280.jpg,Pituitary,Pituitary,100.0,93.8
+Te-pi_0281.jpg,Pituitary,Pituitary,100.0,94.24
+Te-pi_0282.jpg,Pituitary,Pituitary,100.0,94.21
+Te-pi_0283.jpg,Pituitary,Pituitary,99.98,91.44
+Te-pi_0284.jpg,Pituitary,Pituitary,100.0,95.79
+Te-pi_0285.jpg,Pituitary,Pituitary,100.0,97.05
+Te-pi_0286.jpg,Pituitary,Pituitary,100.0,96.3
+Te-pi_0287.jpg,Pituitary,Pituitary,99.99,97.41
+Te-pi_0288.jpg,Pituitary,Pituitary,99.99,94.83
+Te-pi_0289.jpg,Pituitary,Pituitary,100.0,95.81
+Te-pi_0290.jpg,Pituitary,Pituitary,99.99,95.66
+Te-pi_0291.jpg,Pituitary,Pituitary,99.99,92.68
+Te-pi_0292.jpg,Pituitary,Pituitary,100.0,96.62
+Te-pi_0293.jpg,Pituitary,Pituitary,100.0,93.2
+Te-pi_0294.jpg,Pituitary,Pituitary,100.0,96.69
+Te-pi_0295.jpg,Pituitary,Pituitary,100.0,98.61
+Te-pi_0296.jpg,Pituitary,Pituitary,100.0,94.98
+Te-pi_0297.jpg,Pituitary,Pituitary,99.99,96.66
+Te-pi_0298.jpg,Pituitary,Pituitary,99.99,97.92
+Te-pi_0299.jpg,Pituitary,Pituitary,100.0,98.61
