@@ -105,9 +105,12 @@ def get_db():
         db.row_factory = sqlite3.Row
     return db
 
+
 def init_user_db():
+    """Create users table + default reviewer account"""
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
+
     c.execute("""
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -115,8 +118,26 @@ def init_user_db():
             password_hash TEXT NOT NULL
         )
     """)
+
+    # 🔥 Create default user (for reviewers / first run)
+    from werkzeug.security import generate_password_hash
+
+    c.execute("SELECT * FROM users WHERE username = ?", ("admin",))
+    if not c.fetchone():
+        c.execute(
+            "INSERT INTO users (username, password_hash) VALUES (?, ?)",
+            ("admin", generate_password_hash("admin123"))
+        )
+
     conn.commit()
     conn.close()
+
+
+# 🔥 ENSURE DB EXISTS BEFORE ANY REQUEST
+@app.before_request
+def ensure_db():
+    init_user_db()
+
 
 @app.teardown_appcontext
 def close_connection(exc):
@@ -238,9 +259,25 @@ def _load_model():
     )
 
     path = os.path.join("model", "final_convnext_aq.pth")
-
-    state = torch.load(path, map_location="cpu")
-    base.load_state_dict(state)
+    if not os.path.exists(path):
+        print("[INFO] Model not found locally. Downloading from Google Drive...")
+        os.makedirs("model", exist_ok=True)
+        file_id = "1NXQFVXNcGgVn28ZTBWIGq0Rt9r0Ov1-l"
+        url = f"https://drive.google.com/uc?id={file_id}"
+        try:
+            gdown.download(url, path, quiet=False)
+            print("[INFO] Model downloaded successfully.")
+        except Exception as e:
+            print("[ERROR] Model download failed:", e)
+            raise RuntimeError("Model could not be downloaded. Check internet connection.")
+    else:
+        print("[INFO] Model already exists. Skipping download.")
+    try:
+        state = torch.load(path, map_location="cpu")
+        base.load_state_dict(state)
+    except Exception as e:
+        print("[ERROR] Model loading failed:", e)
+        raise RuntimeError("Failed to load model weights.")
     base = base.to(device)
     base.eval()
     base.float()
