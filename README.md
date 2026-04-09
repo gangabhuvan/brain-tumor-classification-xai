@@ -9,8 +9,7 @@
 
 ## 📌 ABSTRACT
 
-Accurate and early diagnosis of brain tumors is crucial for effective clinical intervention and improved patient survival rates. Although Magnetic Resonance Imaging (MRI) is widely used for detection, manual interpretation is time-consuming and subject to inter-observer variability. This work presents a deep learning framework for multi-class brain tumor classification using a unified preprocessing pipeline and systematic experimental evaluation. A total of seven controlled experiments are conducted across three modern architectures—ConvNeXt, Swin Transformer, and EfficientNet-B0—combined with Aquila Optimizer (AQ), Random Search (RS), and baseline configurations. All models achieve high classification performance exceeding 99% accuracy, with observable differences in confidence calibration measured using mean Average Precision (mAP). Among all configurations, ConvNeXt optimized with AQ achieves the best performance with 99.69% accuracy, MCC of 0.9959, and a perfect mAP of 1.0000, indicating superior ranking confidence and decision boundary refinement. Other configurations, including Swin Transformer (RS and AQ) and EfficientNet-B0 (AQ), demonstrate competitive performance, validating architectural robustness. A multi-level Explainable AI (XAI) framework integrating Grad-CAM++, LIME, and SHAP is applied exclusively to the best-performing ConvNeXt + AQ model to ensure interpretability. A Flask-based diagnostic dashboard is developed to demonstrate real-time prediction and explainability capabilities.
-
+Accurate and early diagnosis of brain tumors is crucial for effective clinical intervention and improved patient survival rates. Although Magnetic Resonance Imaging (MRI) is widely used for detection, manual interpretation is time-consuming and subject to inter-observer variability. This work presents a deep learning framework for multi-class brain tumor classification using a unified preprocessing pipeline and systematic experimental evaluation. All experiments are conducted on the Kaggle Brain Tumor MRI dataset, consisting of 7,023 T1-weighted contrast-enhanced MRI images across four classes: glioma, meningioma, pituitary tumor, and no tumor. A total of seven controlled experiments are performed across three modern architectures—ConvNeXt, Swin Transformer, and EfficientNet-B0—combined with Aquila Optimizer (AQ), Random Search (RS), and baseline configurations. All models achieve high classification performance exceeding 99% accuracy, with observable differences in confidence calibration measured using mean Average Precision (mAP). Among all configurations, ConvNeXt optimized with AQ achieves the best performance with 99.69% accuracy, MCC of 0.9959, and a perfect mAP of 1.0000, indicating superior ranking confidence and decision boundary refinement. Other configurations, including Swin Transformer (RS and AQ) and EfficientNet-B0 (AQ), demonstrate competitive performance, validating architectural robustness. A multi-level Explainable AI (XAI) framework integrating Grad-CAM++, LIME, and SHAP is applied exclusively to the best-performing ConvNeXt + AQ model to ensure interpretability. A Flask-based diagnostic dashboard is developed to demonstrate real-time prediction and explainability capabilities.
 ---
 
 ## 🚀 KEY CONTRIBUTIONS
@@ -23,6 +22,118 @@ Accurate and early diagnosis of brain tumors is crucial for effective clinical i
 - End-to-end Flask-based diagnostic system  
 
 ---
+
+## 🔬 METHODOLOGY
+
+The proposed framework follows a consistent pipeline across all seven experiments, ensuring fair comparison between architectures and optimization strategies.
+
+### 1. Dataset Preparation
+- Dataset loaded using `ImageFolder` from the Kaggle Brain Tumor MRI dataset
+- Training and testing directories used separately (`Training/`, `Testing/`)
+- Class labels automatically extracted from folder structure
+
+---
+
+### 2. Data Preprocessing & Augmentation
+A unified preprocessing pipeline is applied across all models:
+
+**Training Transformations:**
+- Resize to 224 × 224  
+- Random Horizontal Flip  
+- Random Rotation (±20°)  
+- Color Jitter (brightness & contrast)  
+- Normalization using ImageNet mean & std  
+
+**Validation/Test Transformations:**
+- Resize to 224 × 224  
+- Normalization only (no augmentation)
+
+---
+
+### 3. Data Splitting Strategy
+
+Two evaluation strategies were used:
+
+- **Single Split (Stratified):**
+  - 80% training, 20% validation  
+  - Stratified using `train_test_split` to maintain class balance  
+
+- **5-Fold Cross-Validation:**
+  - Dataset split into 5 folds using `KFold`
+  - Each fold used once as validation set  
+  - Final performance averaged across folds  
+
+---
+
+### 4. Model Architectures
+
+Three architectures were evaluated:
+
+- **ConvNeXt-Tiny** (pretrained on ImageNet)  
+- **Swin Transformer (Tiny)**  
+- **EfficientNet-B0**  
+
+For all models:
+- Final classification layer modified to 4 classes  
+- Dropout layer added/tuned for regularization  
+
+---
+
+### 5. Training Configuration
+
+- Loss Function: CrossEntropyLoss  
+- Optimizer: AdamW  
+- Mixed Precision Training using `torch.cuda.amp`  
+- Batch size: ~26–32 (varies by experiment)  
+- Epochs: 20  
+
+---
+
+### 6. Hyperparameter Optimization
+
+Three strategies were used:
+
+- **Baseline:** Fixed hyperparameters  
+- **Random Search (RS):** Random sampling of parameters  
+- **Aquila Optimizer (AQ):** Metaheuristic optimization  
+
+AQ optimizes:
+- Learning rate  
+- Dropout  
+- Batch size  
+
+Example (ConvNeXt + AQ):
+- Learning Rate ≈ 1.33e-4  
+- Dropout ≈ 0.27  
+- Batch Size ≈ 26  
+
+---
+
+### 7. Evaluation Metrics
+
+Performance evaluated using:
+
+- **Accuracy** → Overall correctness  
+- **MCC (Matthews Correlation Coefficient)** → Balanced metric  
+- **mAP (mean Average Precision)** → Confidence calibration  
+- **Confusion Matrix & Classification Report**  
+- **Class-wise Recall** (critical for medical evaluation)  
+
+---
+
+### 8. Inference & Deployment
+
+- Best model (ConvNeXt + AQ) selected  
+- Integrated into Flask-based web application  
+- Real-time prediction with XAI outputs  
+
+---
+
+### 🔁 Overall Pipeline
+
+```
+Data → Preprocessing → Split → Model Training → Optimization → Evaluation → Deployment
+```
 
 ## 📊 EXPERIMENTAL RESULTS (N = 1,311)
 
