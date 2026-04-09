@@ -80,7 +80,7 @@ brain-tumor-classification-xai/
 │   ├── SWIN-T+AO.ipynb
 │   └── swin-t-rs.ipynb
 │
-├── static/                         # Frontend assets
+├── static/                         # Frontend + runtime assets
 │   ├── css/
 │   ├── js/
 │   ├── background.jpg
@@ -88,7 +88,7 @@ brain-tumor-classification-xai/
 │   ├── confusion_matrix_test.png
 │   ├── favicon.ico
 │   ├── nmit_logo.jpeg
-│   └── outputs/
+│   └── outputs/                   # Uploaded MRI + generated XAI outputs
 │
 ├── templates/                      # HTML templates
 │   ├── base.html
@@ -96,14 +96,15 @@ brain-tumor-classification-xai/
 │   ├── login.html
 │   └── register.html
 │
-├── uploads/                        # Uploaded MRI images
-│
 ├── utils/                          # Core logic
 │   └── explainer1.py
 │
 ├── app1.py                         # Flask backend
 ├── evaluate_dataset.py            # Evaluation script
 ├── generate_train_features.py     # Feature extraction
+│
+├── results_train.csv              # Training metrics lookup
+├── results_test.csv               # Testing metrics lookup
 │
 ├── requirements.txt
 ├── runtime.txt
