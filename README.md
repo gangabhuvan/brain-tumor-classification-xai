@@ -21,7 +21,8 @@ Accurate and early diagnosis of brain tumors is crucial for effective clinical i
 - Validation against Random Search and baseline models  
 - Achievement of *perfect mAP (1.0000)*  
 - Multi-level XAI (Grad-CAM++, LIME, SHAP)  
-- End-to-end Flask-based diagnostic system  
+- End-to-end Flask-based diagnostic system
+- To the best of our knowledge, this work presents one of the first systematic comparisons of ConvNeXt, Swin Transformer, and EfficientNet-B0 with Aquila Optimizer (AQ) and Random Search (RS) for brain tumor classification
 
 ---
 
