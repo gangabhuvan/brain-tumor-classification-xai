@@ -88,7 +88,7 @@ For all models:
 - Optimizer: AdamW  
 - Mixed Precision Training using `torch.cuda.amp` for faster computation and reduced GPU memory usage while maintaining numerical stability 
 - Batch size: ~26–32 (varies by experiment)  
-- Epochs: 20  
+- Training was conducted for up to 20 epochs using CosineAnnealingLR scheduling, with early stopping applied to prevent overfitting
 
 ---
 
