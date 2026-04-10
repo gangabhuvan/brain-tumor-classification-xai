@@ -211,13 +211,13 @@ Flask-based diagnostic dashboard:
 
 ---
 
-## 📂 COMPLETE PROJECT STRUCTURE
+## 📂 COMPLETE PROJECT STRUCTURE: PUSHED FROM VS CODE TO GITHUB
 
 ```
 brain-tumor-classification-xai/
 │
 ├── model/                          # Final trained model
-│   └── final_convnext_aq.pth
+│   └── final_convnext_aq.pth       #The file is downloaded directly from a Google Drive link when running app1.py, as it exceeds GitHub’s 100 MB upload limit.
 │
 ├── model_experiments/              # Research experiments (CORE)
 │   ├── baseline-convnext.ipynb
