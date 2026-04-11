@@ -5,9 +5,6 @@ _pycache_/
 # 🔹 Virtual environment
 venv/
 
-# 🔹 Uploads (runtime images)
-uploads/
-
 # 🔹 Dataset (very large)
 dataset/
 
@@ -17,9 +14,6 @@ dataset/
 
 # 🔹 Generated features
 train_features.pt
-
-# 🔹 CSV results (generated)
-results_*.csv
 
 # 🔹 Metadata
 lime_metadata.json
