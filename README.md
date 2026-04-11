@@ -332,3 +332,16 @@ This work presents a comprehensive and systematically evaluated deep learning fr
 Beyond performance, the framework emphasizes **reliability and interpretability**, with multi-level explainability (Grad-CAM++, LIME, SHAP) applied to the best-performing model to ensure transparency in decision-making. The consistent preprocessing pipeline, rigorous evaluation strategy (including K-Fold validation), and deployment as a Flask-based diagnostic system highlight the practical applicability of the approach.
 
 While ROC-AUC metrics are saturated due to near-perfect classification performance, metrics such as **mAP and MCC provide more meaningful insights** into model confidence and robustness. Overall, the proposed system demonstrates strong potential as a **clinically assistive tool**, balancing high accuracy, interpretability, and real-world usability.
+
+---
+
+## Citation
+If you use this work, please cite:
+
+```bibtex
+@article{bhuvan2026brain,
+  title={Deep Learning Models for Brain Tumor Classification with Explainable AI},
+  author={Bhuvankumar A. Patri},
+  note={Manuscript under review},
+  year={2026}
+}
