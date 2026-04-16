@@ -3,6 +3,7 @@
 *A research-driven deep learning framework for brain tumor classification with metaheuristic optimization and clinically interpretable AI.*
 
 *Authors:* BHUVANKUMAR A. PATRI, VIDYADEVI G. BIRADAR, USHA C. S., DEEPTHI K.
+
 *Architecture:* ConvNeXt, Swin Transformer, EfficientNet-B0  
 *Optimization:* Aquila Optimizer (AQ), Random Search (RS), Baseline  
 *Explainability:* Grad-CAM++, LIME, SHAP  
