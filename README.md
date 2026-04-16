@@ -1,8 +1,8 @@
-# 🧠 Deep Learning Models for Brain Tumor Classification with Explainable AI
+# Aquila-Optimized Deep Learning for Brain Tumor Classification: A Comparative Study of Optimization Strategies, Model Stability, and Explainable AI
 
 *A research-driven deep learning framework for brain tumor classification with metaheuristic optimization and clinically interpretable AI.*
 
-*Author:* Bhuvankumar A Patri  
+*Authors:* BHUVANKUMAR A. PATRI, VIDYADEVI G. BIRADAR, USHA C. S., DEEPTHI K.
 *Architecture:* ConvNeXt, Swin Transformer, EfficientNet-B0  
 *Optimization:* Aquila Optimizer (AQ), Random Search (RS), Baseline  
 *Explainability:* Grad-CAM++, LIME, SHAP  
@@ -338,8 +338,8 @@ If you use this work, please cite:
 
 ```bibtex
 @article{bhuvan2026brain,
-  title={Deep Learning Models for Brain Tumor Classification with Explainable AI},
-  author={Bhuvankumar A. Patri},
+  title={Aquila-Optimized Deep Learning for Brain Tumor Classification: A Comparative Study of Optimization Strategies, Model Stability, and Explainable AI},
+  authors={BHUVANKUMAR A. PATRI, VIDYADEVI G. BIRADAR, USHA C. S., DEEPTHI K.},
   note={Manuscript under review},
   year={2026}
 }
