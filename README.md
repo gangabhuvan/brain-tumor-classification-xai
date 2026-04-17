@@ -4,9 +4,10 @@
 
 *Authors:* BHUVANKUMAR A. PATRI, VIDYADEVI G. BIRADAR, USHA C. S., DEEPTHI K.
 
-*Architecture:* ConvNeXt, Swin Transformer, EfficientNet-B0  
-*Optimization:* Aquila Optimizer (AQ), Random Search (RS), Baseline  
-*Explainability:* Grad-CAM++, LIME, SHAP  
+- *Architecture:* ConvNeXt, Swin Transformer, EfficientNet-B0  
+- *Optimization:* Aquila Optimizer (AO), Random Search (RS)  
+- *Baseline:* Default (non-optimized) configuration  
+- *Explainability:* Grad-CAM++, LIME, SHAP 
 
 ---
 
