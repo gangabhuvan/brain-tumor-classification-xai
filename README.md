@@ -27,6 +27,16 @@ Accurate and early diagnosis of brain tumors is crucial for effective clinical i
 
 ---
 
+## 👤 Author Contribution
+
+- The complete implementation of this work, including data preprocessing, model development, training, hyperparameter optimization using the Aquila Optimizer, evaluation, and explainability integration (Grad-CAM++, LIME, and SHAP), was carried out by Bhuvankumar A. Patri.
+
+- Vidyadevi G. Biradar provided research guidance, Usha C. S. contributed to review and support, and Deepthi K. contributed to discussion and validation.
+
+- This repository serves as the official implementation of the method described in the associated IEEE manuscript.
+
+---
+
 ## 🔬 METHODOLOGY
 
 The proposed framework follows a consistent pipeline across all seven experiments, ensuring fair comparison between architectures and optimization strategies.
