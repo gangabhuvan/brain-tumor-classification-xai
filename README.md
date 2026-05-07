@@ -1,165 +1,192 @@
-````markdown
 # Aquila-Optimized Deep Learning for Brain Tumor Classification: A Comparative Study of Optimization Strategies, Model Stability, and Explainable AI
 
-🎓 A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication at ICT4SD 2026 (Springer LNNS Series).
+🎓 A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication at the :contentReference[oaicite:0]{index=0} in the Springer LNNS Series.
 
 *A research-driven deep learning framework for brain tumor classification with metaheuristic optimization and clinically interpretable AI.*
 
-**Primary Research & Implementation:** BHUVANKUMAR A. PATRI
+---
 
-- **Architecture:** ConvNeXt, Swin Transformer, EfficientNet-B0  
-- **Optimization:** Aquila Optimizer (AO), Random Search (RS)  
-- **Baseline:** Default (non-optimized) configuration  
-- **Explainability:** Grad-CAM++, LIME, SHAP  
+## 👨‍💻 Primary Research & Implementation
+
+**Bhuvankumar A. Patri**
+
+---
+
+## 🧠 Framework Highlights
+
+- **Architectures:** ConvNeXt-Tiny, Swin Transformer-Tiny, EfficientNet-B0  
+- **Optimization Strategies:** Aquila Optimizer (AO), Random Search (RS), Baseline Configuration  
+- **Explainable AI (XAI):** Grad-CAM++, LIME, SHAP  
+- **Deployment:** Flask-based diagnostic dashboard  
 
 ---
 
 # 📌 ABSTRACT
 
-Accurate and early diagnosis of brain tumors is crucial for effective clinical intervention and improved patient survival rates. Although Magnetic Resonance Imaging (MRI) is widely used for detection, manual interpretation is time-consuming and subject to inter-observer variability.
+Accurate and early diagnosis of brain tumors is crucial for effective clinical intervention and improved patient survival rates. Although Magnetic Resonance Imaging (MRI) is widely used for tumor detection, manual interpretation is time-consuming and subject to inter-observer variability.
 
 This work presents a deep learning framework for multi-class brain tumor classification using a unified preprocessing pipeline and systematic experimental evaluation.
 
-All experiments are conducted on the Kaggle Brain Tumor MRI dataset, consisting of 7,023 T1-weighted contrast-enhanced MRI images across four classes: glioma, meningioma, pituitary tumor, and no tumor.
+All experiments were conducted on the Kaggle Brain Tumor MRI dataset consisting of 7,023 T1-weighted contrast-enhanced MRI images across four classes:
 
-A total of seven controlled experiments are performed across three modern architectures—ConvNeXt, Swin Transformer, and EfficientNet-B0—combined with Aquila Optimizer (AO), Random Search (RS), and baseline configurations.
+- Glioma Tumor
+- Meningioma Tumor
+- Pituitary Tumor
+- No Tumor
 
-All models achieve consistently high performance (>99% accuracy), indicating strong feature separability in MRI-based tumor classification with observable differences in confidence calibration measured using mean Average Precision (mAP).
+A total of seven controlled experiments were performed across three modern architectures—ConvNeXt, Swin Transformer, and EfficientNet-B0—combined with Aquila Optimizer (AO), Random Search (RS), and baseline configurations.
 
-Among all configurations, ConvNeXt optimized with AO achieves the best performance with 99.69% accuracy, MCC of 0.9959, and a maximum observed mAP of 1.0000, indicating superior ranking confidence and decision boundary refinement.
+All models achieved consistently high performance (>99% accuracy), indicating strong feature separability in MRI-based tumor classification, with observable differences in confidence calibration measured using mean Average Precision (mAP).
 
-Other configurations, including Swin Transformer (RS and AO) and EfficientNet-B0 (AO), demonstrate competitive performance, validating architectural robustness.
+Among all configurations, **ConvNeXt + AO** achieved the best overall performance with:
 
-A multi-level Explainable AI (XAI) framework integrating Grad-CAM++, LIME, and SHAP is applied exclusively to the best-performing ConvNeXt + AO model to ensure interpretability.
+- **Accuracy:** 99.69%
+- **MCC:** 0.9959
+- **Maximum observed mAP:** 1.0000
 
-A Flask-based diagnostic dashboard is developed to demonstrate real-time prediction and explainability capabilities.
+These results indicate superior ranking confidence and improved decision-boundary refinement.
+
+Additional configurations, including Swin Transformer (RS and AO) and EfficientNet-B0 + AO, also demonstrated highly competitive performance, validating the robustness of transformer-based and CNN-based architectures for medical imaging tasks.
+
+To improve interpretability and clinical trustworthiness, a multi-level Explainable AI (XAI) framework integrating Grad-CAM++, LIME, and SHAP was applied exclusively to the best-performing ConvNeXt + AO model.
+
+A Flask-based diagnostic dashboard was further developed to demonstrate real-time prediction and explainability capabilities.
 
 ---
 
 # 🚀 KEY CONTRIBUTIONS
 
-- Controlled comparison of ConvNeXt, Swin Transformer, and EfficientNet-B0  
-- Metaheuristic optimization using Aquila Optimizer (AO)  
-- Validation against Random Search and baseline models  
-- Achievement of a maximum observed mAP of 1.0000  
-- Multi-level Explainable AI (Grad-CAM++, LIME, SHAP)  
-- End-to-end Flask-based diagnostic system  
-- Comparative evaluation of ConvNeXt, Swin Transformer, and EfficientNet-B0 combined with AO and Random Search for brain tumor classification  
+- Controlled comparative analysis of ConvNeXt, Swin Transformer, and EfficientNet-B0  
+- Hyperparameter optimization using Aquila Optimizer (AO)  
+- Comparative validation against Random Search and baseline configurations  
+- Achievement of a maximum observed mAP of **1.0000**  
+- Integration of multi-level Explainable AI (Grad-CAM++, LIME, SHAP)  
+- Development of an end-to-end Flask-based diagnostic application  
+- Unified preprocessing and evaluation pipeline for reproducibility  
+- Comparative evaluation of optimization strategies for medical image classification  
 
 ---
 
 # 🔬 METHODOLOGY
 
-The proposed framework follows a consistent pipeline across all seven experiments, ensuring fair comparison between architectures and optimization strategies.
-
-## 1. Dataset Preparation
-
-- Dataset loaded using `ImageFolder` from the Kaggle Brain Tumor MRI dataset  
-- Training and testing directories used separately (`Training/`, `Testing/`)  
-- Class labels automatically extracted from folder structure  
+The proposed framework follows a consistent experimental pipeline across all seven experiments to ensure fair comparison between architectures and optimization strategies.
 
 ---
 
-## 2. Data Preprocessing & Augmentation
+## 1️⃣ Dataset Preparation
 
-A unified preprocessing pipeline is applied across all models.
+- Dataset loaded using `ImageFolder` from the Kaggle Brain Tumor MRI dataset  
+- Separate `Training/` and `Testing/` directories utilized  
+- Class labels automatically extracted from the folder structure  
+
+---
+
+## 2️⃣ Data Preprocessing & Augmentation
+
+A unified preprocessing pipeline was applied across all models.
 
 ### Training Transformations
 
-- Resize to 224 × 224  
-- Random Horizontal Flip  
-- Random Rotation (±20°)  
-- Color Jitter (brightness & contrast)  
-- Normalization using ImageNet mean & standard deviation  
+- Resize to `224 × 224`
+- Random Horizontal Flip
+- Random Rotation (`±20°`)
+- Color Jitter (brightness and contrast)
+- Normalization using ImageNet mean and standard deviation
 
 ### Validation/Test Transformations
 
-- Resize to 224 × 224  
-- Normalization only (no augmentation)  
+- Resize to `224 × 224`
+- Normalization only (without augmentation)
 
 ---
 
-## 3. Data Splitting Strategy
+## 3️⃣ Data Splitting Strategy
 
-Two evaluation strategies were used.
+Two evaluation strategies were implemented.
 
-### Single Split (Stratified)
+### Stratified Single Split
 
-- 80% training, 20% validation  
-- Stratified using `train_test_split` to maintain class balance  
+- 80% Training
+- 20% Validation
+- Stratified using `train_test_split` to preserve class balance
 
 ### 5-Fold Cross-Validation
 
-- Dataset split into 5 folds using `KFold`  
-- Each fold used once as validation set  
-- Final performance averaged across folds  
+- Dataset divided into 5 folds using `KFold`
+- Each fold used once as validation data
+- Final performance averaged across folds
 
 ---
 
-## 4. Model Architectures
+## 4️⃣ Model Architectures
 
-Three architectures were evaluated.
+Three architectures were evaluated:
 
-- **ConvNeXt-Tiny** (pretrained on ImageNet)  
-- **Swin Transformer (Tiny)**  
-- **EfficientNet-B0**  
+- **ConvNeXt-Tiny** (ImageNet pretrained)
+- **Swin Transformer-Tiny**
+- **EfficientNet-B0**
 
 For all models:
 
-- Final classification layer modified to 4 classes  
-- Dropout layer added/tuned for regularization  
+- Final classification layer modified for 4-class classification
+- Dropout regularization added/tuned
 
 ---
 
-## 5. Training Configuration
+## 5️⃣ Training Configuration
 
-- Loss Function: `CrossEntropyLoss`  
-- Optimizer: `AdamW`  
-- Mixed Precision Training using `torch.cuda.amp` for improved computational efficiency and reduced GPU memory usage  
-- Batch size: ~26–32 (varies by experiment)  
-- Training conducted for up to 20 epochs using `CosineAnnealingLR` scheduling with early stopping to prevent overfitting  
-
----
-
-## 6. Hyperparameter Optimization
-
-Three optimization strategies were used.
-
-- **Baseline:** Fixed hyperparameters  
-- **Random Search (RS):** Random parameter sampling  
-- **Aquila Optimizer (AO):** Metaheuristic optimization  
-
-AO optimizes:
-
-- Learning rate  
-- Dropout probability  
-- Batch size  
-
-Example (ConvNeXt + AO):
-
-- Learning Rate ≈ 1.33e-4  
-- Dropout ≈ 0.27  
-- Batch Size ≈ 26  
+- **Loss Function:** `CrossEntropyLoss`
+- **Optimizer:** `AdamW`
+- **Scheduler:** `CosineAnnealingLR`
+- **Mixed Precision Training:** `torch.cuda.amp`
+- **Batch Size:** ~26–32 (experiment-dependent)
+- **Epochs:** Up to 20
+- **Early Stopping:** Enabled to prevent overfitting
 
 ---
 
-## 7. Evaluation Metrics
+## 6️⃣ Hyperparameter Optimization
 
-Performance evaluated using:
+Three optimization strategies were evaluated:
 
-- **Accuracy** → Overall correctness  
+- **Baseline:** Fixed hyperparameters
+- **Random Search (RS):** Random parameter sampling
+- **Aquila Optimizer (AO):** Metaheuristic optimization
+
+### AO Optimization Targets
+
+- Learning Rate
+- Dropout Probability
+- Batch Size
+
+### Example (ConvNeXt + AO)
+
+| Parameter | Value |
+|---|---|
+| Learning Rate | ~1.33e-4 |
+| Dropout | ~0.27 |
+| Batch Size | ~26 |
+
+---
+
+## 7️⃣ Evaluation Metrics
+
+Performance was evaluated using:
+
+- **Accuracy** → Overall classification correctness  
 - **MCC (Matthews Correlation Coefficient)** → Balanced predictive reliability  
 - **mAP (mean Average Precision)** → Confidence calibration and ranking quality  
-- **Confusion Matrix & Classification Report**  
-- **Class-wise Recall** (critical for medical evaluation)  
+- **Confusion Matrix**  
+- **Classification Report**  
+- **Class-wise Recall** (critical in medical diagnosis)
 
 ---
 
-## 8. Inference & Deployment
+## 8️⃣ Inference & Deployment
 
-- Best model (ConvNeXt + AO) selected  
-- Integrated into a Flask-based web application  
-- Real-time prediction with XAI outputs  
+- Best-performing model (**ConvNeXt + AO**) selected
+- Integrated into a Flask-based web application
+- Real-time prediction with XAI visualizations
 
 ---
 
@@ -188,51 +215,55 @@ Best Model Selection
         ↓
 Deployment
 (Flask Application + XAI)
-````
+```
 
 ---
 
-# 📊 EXPERIMENTAL RESULTS (N = 1,311)
+# 📊 EXPERIMENTAL RESULTS
 
-| Exp | Model Configuration | Optimizer | Accuracy (%) | MCC    | mAP        | Errors |
-| --- | ------------------- | --------- | ------------ | ------ | ---------- | ------ |
-| 01  | ConvNeXt (Single)   | AO        | 99.69        | 0.9959 | **1.0000** | 4      |
-| 02  | ConvNeXt (Single)   | Baseline  | 99.69        | 0.9959 | 0.9999     | 4      |
-| 03  | Swin Transformer    | RS        | 99.62        | 0.9949 | 0.9999     | 5      |
-| 04  | Swin Transformer    | AO        | 99.62        | 0.9949 | 0.9995     | 5      |
-| 05  | ConvNeXt (K-Fold)   | AO        | 99.47        | 0.9928 | 0.9998     | 7      |
-| 06  | EfficientNet-B0     | AO        | 99.47        | 0.9929 | 0.9999     | 7      |
-| 07  | ConvNeXt (K-Fold)   | Baseline  | 99.24        | 0.9898 | 0.9997     | 10     |
+**Test Samples (N = 1,311)**
+
+| Exp | Model Configuration | Optimization | Accuracy (%) | MCC | mAP | Errors |
+|---|---|---|---|---|---|---|
+| 01 | ConvNeXt (Single Split) | AO | **99.69** | **0.9959** | **1.0000** | 4 |
+| 02 | ConvNeXt (Single Split) | Baseline | 99.69 | 0.9959 | 0.9999 | 4 |
+| 03 | Swin Transformer | RS | 99.62 | 0.9949 | 0.9999 | 5 |
+| 04 | Swin Transformer | AO | 99.62 | 0.9949 | 0.9995 | 5 |
+| 05 | ConvNeXt (5-Fold CV) | AO | 99.47 | 0.9928 | 0.9998 | 7 |
+| 06 | EfficientNet-B0 | AO | 99.47 | 0.9929 | 0.9999 | 7 |
+| 07 | ConvNeXt (5-Fold CV) | Baseline | 99.24 | 0.9898 | 0.9997 | 10 |
 
 ---
 
 # 🔍 KEY OBSERVATIONS
 
-* **ConvNeXt + AO** and **Swin Transformer (RS & AO)** achieved **100% recall for the Meningioma class**, indicating no missed meningioma cases.
+- **ConvNeXt + AO** and **Swin Transformer (RS & AO)** achieved **100% recall for the Meningioma class**, indicating no missed meningioma cases.
 
-* **EfficientNet-B0 + AO** achieved **100% recall for the No Tumor class**, demonstrating strong reliability in healthy-case detection.
+- **EfficientNet-B0 + AO** achieved **100% recall for the No Tumor class**, demonstrating strong reliability in healthy-case detection.
 
-* Although overall accuracy remains similarly high across models, class-wise behavior differs, emphasizing the importance of per-class medical evaluation.
+- Although overall accuracy remained similarly high across models, class-wise behavior differed, emphasizing the importance of per-class medical evaluation.
 
-* ConvNeXt + AO demonstrates stronger tumor-detection behavior, while EfficientNet-B0 shows stronger reliability for normal-case classification.
+- ConvNeXt + AO demonstrated stronger tumor-detection behavior, while EfficientNet-B0 showed stronger reliability for normal-case classification.
 
-* ROC-AUC values approach saturation (~1.0) across all models, making mAP and MCC more informative metrics for confidence calibration and prediction reliability.
+- ROC-AUC values approached saturation (~1.0) across all models, making **mAP** and **MCC** more informative metrics for confidence calibration and prediction reliability.
 
 ---
 
 # 💡 WHY RECALL MATTERS
 
-In medical diagnosis, recall is critical because false negatives may result in missed tumor cases. High recall ensures safer clinical decision-support behavior and reduces the probability of overlooking clinically significant abnormalities.
+In medical diagnosis, recall is a critical metric because false negatives may result in missed tumor cases. High recall ensures safer clinical decision-support behavior and reduces the probability of overlooking clinically significant abnormalities.
 
 ---
 
 # 🧠 EXPLAINABLE AI (XAI)
 
-Applied exclusively to the best-performing ConvNeXt + AO model.
+Applied exclusively to the best-performing **ConvNeXt + AO** model.
 
-* **Grad-CAM++** → Tumor localization
-* **LIME** → Local feature importance
-* **SHAP** → Pixel-level contribution analysis
+| Method | Purpose |
+|---|---|
+| Grad-CAM++ | Tumor localization |
+| LIME | Local feature importance |
+| SHAP | Pixel-level contribution analysis |
 
 These methods improve transparency, interpretability, and clinical trustworthiness.
 
@@ -240,14 +271,14 @@ These methods improve transparency, interpretability, and clinical trustworthine
 
 # 🌐 WEB APPLICATION
 
-Flask-based diagnostic dashboard with:
+The Flask-based diagnostic dashboard includes:
 
-* Secure login system
-* MRI upload interface
-* Real-time prediction
-* Explainability visualization
-* Clinical-style feedback
-* PDF report generation
+- Secure login system
+- MRI upload interface
+- Real-time prediction
+- Explainability visualization
+- Clinical-style feedback
+- PDF report generation
 
 ---
 
@@ -285,13 +316,27 @@ brain-tumor-classification-xai/
 
 # ⚙️ INSTALLATION & LOCAL EXECUTION
 
+## Clone Repository
+
 ```bash
 git clone https://github.com/gangabhuvan/brain-tumor-classification-xai.git
+```
 
+## Navigate to Project
+
+```bash
 cd brain-tumor-classification-xai
+```
 
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+## Run Application
+
+```bash
 python app1.py
 ```
 
@@ -301,54 +346,61 @@ Open in browser:
 http://127.0.0.1:5000
 ```
 
-Tested with Python 3.10 and CUDA-enabled PyTorch.
+Tested using:
+
+- Python 3.10
+- CUDA-enabled PyTorch
 
 ---
 
 # 📌 NOTES
 
-* This repository is research-oriented, with most experimentation conducted through Jupyter notebooks in `model_experiments/`.
+- This repository is primarily research-oriented, with most experimentation conducted through Jupyter notebooks under `model_experiments/`.
 
-* The deployment system intentionally uses only the best-performing ConvNeXt + AO model for consistent inference performance.
+- The deployment system intentionally utilizes only the best-performing ConvNeXt + AO model for consistent inference performance.
 
-* Model weights are automatically loaded/downloaded at runtime for simplified setup.
+- Model weights are automatically loaded/downloaded at runtime for simplified setup.
 
-* The framework emphasizes reproducibility through unified preprocessing and consistent evaluation protocols.
+- The framework emphasizes reproducibility through unified preprocessing and consistent experimental protocols.
 
 ---
 
 # 📚 FUTURE WORK
 
-* Inference optimization through quantization and lightweight deployment strategies
-* GPU-enabled scalable cloud deployment using Docker/containerized infrastructure
-* Clinical validation using real-world hospital datasets
-* Multi-modal learning with additional imaging modalities and patient metadata
-* Quantitative evaluation of explainability methods and clinician-centered XAI studies
+- Model quantization and lightweight inference optimization  
+- GPU-enabled scalable cloud deployment using Docker/containerized infrastructure  
+- Clinical validation using real-world hospital datasets  
+- Multi-modal learning with additional imaging modalities and patient metadata  
+- Quantitative evaluation of XAI methods through clinician-centered studies  
 
 ---
 
 # 🏁 CONCLUSION
 
-This work presents a comprehensive and systematically evaluated deep learning framework for multi-class brain tumor classification. Across seven controlled experiments, the study demonstrates that optimization-driven training using the Aquila Optimizer significantly improves confidence calibration and prediction reliability while maintaining very high classification accuracy.
+This work presents a comprehensive and systematically evaluated deep learning framework for multi-class brain tumor classification.
 
-Beyond predictive performance, the framework emphasizes interpretability and practical deployment through integrated Explainable AI methods and a Flask-based diagnostic application. The results demonstrate the effectiveness of combining modern architectures, metaheuristic optimization, and clinically interpretable AI for robust medical imaging systems.
+Across seven controlled experiments, the study demonstrates that optimization-driven training using the Aquila Optimizer significantly improves confidence calibration and prediction reliability while maintaining extremely high classification accuracy.
+
+Beyond predictive performance, the framework emphasizes interpretability and practical deployment through integrated Explainable AI methods and a Flask-based diagnostic application.
+
+The results demonstrate the effectiveness of combining modern deep learning architectures, metaheuristic optimization, and clinically interpretable AI for robust medical imaging systems.
 
 ---
 
 # 📢 PUBLICATION STATUS
 
-A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication in the Springer Lecture Notes in Networks and Systems (LNNS) series at ICT4SD 2026.
+A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication in the Springer Lecture Notes in Networks and Systems (LNNS) Series at the :contentReference[oaicite:1]{index=1}.
 
 ## Accepted Paper
 
-**Optimization-Driven Multi-Class Brain Tumor Classification Using EfficientNet-B0 and Aquila Optimizer**
+### **Optimization-Driven Multi-Class Brain Tumor Classification Using EfficientNet-B0 and Aquila Optimizer**
 
-* Conference: ICT4SD 2026, Goa, India
-* Publisher: Springer LNNS Series
-* Presentation Type: Oral Presentation
+- **Conference:** ICT4SD 2026, Goa, India  
+- **Publisher:** Springer LNNS Series  
+- **Presentation Type:** Oral Presentation  
 
-> Note:
-> The accepted Springer conference paper focuses specifically on the EfficientNet-B0 + AO framework, while this repository additionally contains extended comparative experiments involving ConvNeXt, Swin Transformer, Random Search, K-Fold validation, Explainable AI (XAI), and deployment modules.
+> **Note:**  
+> The accepted Springer conference paper specifically focuses on the EfficientNet-B0 + AO framework, whereas this repository additionally includes extended comparative experiments involving ConvNeXt, Swin Transformer, Random Search, K-Fold validation, Explainable AI (XAI), and deployment modules.
 
 ---
 
@@ -364,3 +416,9 @@ A focused collaborative version of this research based on the EfficientNet-B0 + 
   note={Accepted for publication}
 }
 ```
+
+---
+
+# ⭐ ACKNOWLEDGEMENT
+
+If you find this project useful for research or academic purposes, consider starring the repository and citing the work.
