@@ -1,6 +1,6 @@
 # Aquila-Optimized Deep Learning for Brain Tumor Classification: A Comparative Study of Optimization Strategies, Model Stability, and Explainable AI
 
-🎓 A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication at the :contentReference[oaicite:0]{index=0} in the Springer LNNS Series.
+🎓 A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication in the Springer LNNS Series.
 
 *A research-driven deep learning framework for brain tumor classification with metaheuristic optimization and clinically interpretable AI.*
 
@@ -23,34 +23,7 @@
 
 # 📌 ABSTRACT
 
-Accurate and early diagnosis of brain tumors is crucial for effective clinical intervention and improved patient survival rates. Although Magnetic Resonance Imaging (MRI) is widely used for tumor detection, manual interpretation is time-consuming and subject to inter-observer variability.
-
-This work presents a deep learning framework for multi-class brain tumor classification using a unified preprocessing pipeline and systematic experimental evaluation.
-
-All experiments were conducted on the Kaggle Brain Tumor MRI dataset consisting of 7,023 T1-weighted contrast-enhanced MRI images across four classes:
-
-- Glioma Tumor
-- Meningioma Tumor
-- Pituitary Tumor
-- No Tumor
-
-A total of seven controlled experiments were performed across three modern architectures—ConvNeXt, Swin Transformer, and EfficientNet-B0—combined with Aquila Optimizer (AO), Random Search (RS), and baseline configurations.
-
-All models achieved consistently high performance (>99% accuracy), indicating strong feature separability in MRI-based tumor classification, with observable differences in confidence calibration measured using mean Average Precision (mAP).
-
-Among all configurations, **ConvNeXt + AO** achieved the best overall performance with:
-
-- **Accuracy:** 99.69%
-- **MCC:** 0.9959
-- **Maximum observed mAP:** 1.0000
-
-These results indicate superior ranking confidence and improved decision-boundary refinement.
-
-Additional configurations, including Swin Transformer (RS and AO) and EfficientNet-B0 + AO, also demonstrated highly competitive performance, validating the robustness of transformer-based and CNN-based architectures for medical imaging tasks.
-
-To improve interpretability and clinical trustworthiness, a multi-level Explainable AI (XAI) framework integrating Grad-CAM++, LIME, and SHAP was applied exclusively to the best-performing ConvNeXt + AO model.
-
-A Flask-based diagnostic dashboard was further developed to demonstrate real-time prediction and explainability capabilities.
+Accurate and early diagnosis of brain tumors is crucial for effective clinical intervention and improved patient survival rates. Although Magnetic Resonance Imaging (MRI) is widely used for tumor detection, manual interpretation is time-consuming and subject to inter-observer variability. This work presents a deep learning framework for multi-class brain tumor classification using a unified preprocessing pipeline and systematic experimental evaluation. All experiments were conducted on the Kaggle Brain Tumor MRI dataset, consisting of 7,023 T1-weighted contrast-enhanced MRI images across four classes: glioma tumor, meningioma tumor, pituitary tumor, and no tumor. A total of seven controlled experiments were performed across three modern architectures—ConvNeXt, Swin Transformer, and EfficientNet-B0—combined with Aquila Optimizer (AO), Random Search (RS), and baseline configurations. All evaluated models achieved consistently high performance (>99% accuracy), indicating strong feature separability in MRI-based tumor classification, with observable differences in confidence calibration measured using mean Average Precision (mAP). Among all configurations, ConvNeXt + AO achieved the best overall performance with 99.69% accuracy, MCC of 0.9959, and an mAP value of 1.0000, indicating superior ranking confidence and improved decision-boundary refinement. Additional configurations, including Swin Transformer (RS and AO) and EfficientNet-B0 + AO, also demonstrated highly competitive performance, validating the robustness of transformer-based and CNN-based architectures for medical imaging tasks. To improve interpretability and clinical trustworthiness, a multi-level Explainable AI (XAI) framework integrating Grad-CAM++, LIME, and SHAP was applied exclusively to the best-performing ConvNeXt + AO model. A Flask-based diagnostic dashboard was further developed to demonstrate real-time prediction and explainability capabilities.
 
 ---
 
@@ -59,7 +32,7 @@ A Flask-based diagnostic dashboard was further developed to demonstrate real-tim
 - Controlled comparative analysis of ConvNeXt, Swin Transformer, and EfficientNet-B0  
 - Hyperparameter optimization using Aquila Optimizer (AO)  
 - Comparative validation against Random Search and baseline configurations  
-- Achievement of a maximum observed mAP of **1.0000**  
+- Achievement of an mAP value of **1.0000**
 - Integration of multi-level Explainable AI (Grad-CAM++, LIME, SHAP)  
 - Development of an end-to-end Flask-based diagnostic application  
 - Unified preprocessing and evaluation pipeline for reproducibility  
@@ -273,7 +246,7 @@ These methods improve transparency, interpretability, and clinical trustworthine
 
 The Flask-based diagnostic dashboard includes:
 
-- Secure login system
+- User authentication system
 - MRI upload interface
 - Real-time prediction
 - Explainability visualization
@@ -389,7 +362,7 @@ The results demonstrate the effectiveness of combining modern deep learning arch
 
 # 📢 PUBLICATION STATUS
 
-A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication in the Springer Lecture Notes in Networks and Systems (LNNS) Series at the :contentReference[oaicite:1]{index=1}.
+A focused collaborative version of this research based on the EfficientNet-B0 + Aquila Optimizer framework has been accepted for Oral Presentation and Publication in the Springer Lecture Notes in Networks and Systems (LNNS) Series.
 
 ## Accepted Paper
 
