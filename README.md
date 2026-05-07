@@ -2,7 +2,7 @@
 
 *A research-driven deep learning framework for brain tumor classification with metaheuristic optimization and clinically interpretable AI.*
 
-*Authors:* BHUVANKUMAR A. PATRI, VIDYADEVI G. BIRADAR, USHA C. S., DEEPTHI K.
+*Authors:* BHUVANKUMAR A. PATRI
 
 - *Architecture:* ConvNeXt, Swin Transformer, EfficientNet-B0  
 - *Optimization:* Aquila Optimizer (AO), Random Search (RS)  
@@ -25,16 +25,6 @@ Accurate and early diagnosis of brain tumors is crucial for effective clinical i
 - Multi-level XAI (Grad-CAM++, LIME, SHAP)  
 - End-to-end Flask-based diagnostic system
 - To the best of our knowledge, this work presents one of the first systematic comparisons of ConvNeXt, Swin Transformer, and EfficientNet-B0 with Aquila Optimizer (AQ) and Random Search (RS) for brain tumor classification
-
----
-
-## 👤 Author Contribution
-
-- The complete implementation of this work, including data preprocessing, model development, training, hyperparameter optimization using the Aquila Optimizer, evaluation, and explainability integration (Grad-CAM++, LIME, and SHAP), was carried out by Bhuvankumar A. Patri.
-
-- Vidyadevi G. Biradar provided research guidance, Usha C. S. contributed to review and support, and Deepthi K. contributed to discussion and validation.
-
-- This repository serves as the official implementation of the method described in the associated IEEE manuscript.
 
 ---
 
