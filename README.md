@@ -364,6 +364,3 @@ A focused collaborative version of this research based on the EfficientNet-B0 + 
   note={Accepted for publication}
 }
 ```
-
-```
-```
