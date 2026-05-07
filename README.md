@@ -382,7 +382,7 @@ A focused collaborative version of this research based on the EfficientNet-B0 + 
 ```bibtex
 @inproceedings{patri2026efficientnet,
   title={Optimization-Driven Multi-Class Brain Tumor Classification Using EfficientNet-B0 and Aquila Optimizer},
-  author={Patri, Bhuvankumar A. and Guptha, ChinmayKumar E. P. and Gowda, Rakshith B. and Arya, Charan K. and Biradar, Vidyadevi G.},
+  author={Bhuvankumar A. Patri and ChinmayKumar Guptha E. P. and Rakshith B. G. and Charan Arya K. and Vidyadevi G. Biradar},
   booktitle={ICT4SD 2026},
   publisher={Springer LNNS},
   year={2026},
